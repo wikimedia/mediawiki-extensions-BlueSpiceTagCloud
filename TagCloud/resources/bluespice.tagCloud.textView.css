@@ -1,0 +1,42 @@
+/**
+ * Stylesheet for TagCloudTextViewHandler
+ *
+ * Part of BlueSpice MediaWiki
+ *
+ * @author     Patric Wirth <wirth@hallowelt.com>
+ * @package    BlueSpiceTagCloud
+ * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v2 or later
+ * @filesource
+ */
+div.bs-tagcloud-textview {
+	text-align: center;
+}
+div.bs-tagcloud-textview ul{
+	border: 2px solid #aaa;
+	border-radius: 20px;
+	list-style-type: none;
+	display: block;
+	overflow: auto;
+	padding: 10px;
+	margin: 0 !important;
+}
+div.bs-tagcloud-textview ul li{
+	display: inline-block;
+}
+div.bs-tagcloud-textview ul li a{
+	margin: 2px;
+	word-break: keep-all !important;
+}
+span.bs-tagcloud-textview-title {
+	font-size: 13px;
+	color: grey;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	margin-top: -13px;
+}
+
+.bs-tagcloud-textview-noborder ul{
+	border:none !important;
+}

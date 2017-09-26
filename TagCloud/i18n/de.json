@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Patric Wirth <wirth@hallowelt.com>"
+		]
+	},
+	"bs-tagcloud-desc": "Zeigt verschiedene Tag-Clouds",
+	"bs-tagcloud-error-tagtype": "Angegebener $1 ist kein gültiger Handler."
+}

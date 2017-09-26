@@ -1,0 +1,44 @@
+{
+	"name": "TagCloud",
+	"version": "2.27.1",
+	"url": "https://help.bluespice.com/index.php/TagCloud",
+	"author": [
+		"Patric Wirth"
+	],
+	"descriptionmsg": "bs-tagcloud-desc",
+	"type": "bluespice",
+	"bsgExtensions": {
+		"TagCloud": {
+			"className": "TagCloud",
+			"extPath": "/BlueSpiceTagCloud/TagCloud",
+			"package": "BlueSpice Pro",
+			"status": "beta"
+		}
+	},
+	"MessagesDirs": {
+		"TagCloud": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"TagCloud": "TagCloud.class.php",
+		"TagCloudValidator": "includes/TagCloudValidator.interface.php",
+		"TagCloudHandler": "includes/TagCloudHandler.interface.php",
+		"TagCloudBaseHandler": "includes/TagCloudBaseHandler.class.php",
+		"TagCloudBaseViewHandler": "includes/TagCloudBaseViewHandler.class.php",
+		"TagCloudCategoryHandler": "includes/Handler/TagCloudCategoryHandler.class.php",
+		"TagCloudTextViewHandler": "includes/ViewHandler/TagCloudTextViewHandler.class.php",
+		"TagCloudListViewHandler": "includes/ViewHandler/TagCloudListViewHandler.class.php"
+	},
+	"ResourceModules": {
+		"ext.bluespice.tagCloud.textView": {
+			"styles": "bluespice.tagCloud.textView.css",
+			"dependencies": "ext.bluespice"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceTagCloud/TagCloud/resources"
+	},
+	"manifest_version": 1
+}
