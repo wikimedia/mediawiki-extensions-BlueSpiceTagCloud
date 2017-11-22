@@ -1,6 +1,7 @@
 {
 	"name": "Canvas3DTagCloud",
-	"version": "2.27.1",
+	"license-name": "GPL-3.0",
+	"version": "3.0.0",
 	"url": "https://help.bluespice.com/index.php/Canvas3DTagCloud",
 	"author": [
 		"Patric Wirth",

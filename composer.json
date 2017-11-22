@@ -2,6 +2,7 @@
   "name": "mediawiki/blue-spice-tag-cloud",
   "type": "mediawiki-extension",
   "description": "Displays various tag clouds",
+  "license": "GPL-3.0",
   "require": {
     "composer/installers": "~1.0"
   }
