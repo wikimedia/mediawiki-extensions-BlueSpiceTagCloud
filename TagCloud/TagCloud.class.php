@@ -50,12 +50,8 @@ class TagCloud extends BsExtensionMW {
 	 * Initialization of TagCloud extension
 	 */
 	protected function initExt() {
-		wfProfileIn('BS::' . __METHOD__);
-
 		$this->setHook( 'ParserFirstCallInit' );
 		$this->setHook( 'BeforePageDisplay' );
-
-		wfProfileOut('BS::' . __METHOD__);
 	}
 
 	protected static function runRegisterHandlers( $bForceReload = false ) {

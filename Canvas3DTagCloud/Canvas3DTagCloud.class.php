@@ -40,11 +40,7 @@ class Canvas3DTagCloud extends BsExtensionMW {
 	 * Initialization of Canvas3DTagCloud extension
 	 */
 	protected function initExt() {
-		wfProfileIn('BS::' . __METHOD__);
-
 		$this->setHook( 'BSTagCloudRegisterHandlers' );
-
-		wfProfileOut('BS::' . __METHOD__);
 	}
 
 	public function onBSTagCloudRegisterHandlers( &$aHandlers,
