@@ -31,8 +31,7 @@
 			"scripts": [
 				"jQuery.tagCanvas/jQuery.tagcanvas.2.9.min.js",
 				"bluespice.canvas3DTagCloud.js"
-			],
-			"position": "top"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
