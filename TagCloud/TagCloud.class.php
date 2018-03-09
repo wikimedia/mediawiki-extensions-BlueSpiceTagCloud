@@ -59,7 +59,7 @@ class TagCloud extends BsExtensionMW {
 			return true;
 		}
 
-		$b = wfRunHooks( 'BSTagCloudRegisterHandlers', array(
+		$b = Hooks::run( 'BSTagCloudRegisterHandlers', array(
 			&self::$aHandlers,
 			&self::$sDefaultHandlerType,
 			&self::$aViewHandlers,
