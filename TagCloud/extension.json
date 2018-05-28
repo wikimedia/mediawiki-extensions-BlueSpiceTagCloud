@@ -33,8 +33,7 @@
 	},
 	"ResourceModules": {
 		"ext.bluespice.tagCloud.textView": {
-			"styles": "bluespice.tagCloud.textView.css",
-			"dependencies": "ext.bluespice"
+			"styles": "bluespice.tagCloud.textView.css"
 		}
 	},
 	"ResourceFileModulePaths": {
