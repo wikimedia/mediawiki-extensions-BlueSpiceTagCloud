@@ -2,13 +2,9 @@ module.exports = function ( grunt ) {
 	grunt.loadNpmTasks( 'grunt-jsonlint' );
 	grunt.loadNpmTasks( 'grunt-banana-checker' );
 
+	var conf = grunt.file.readJSON( 'extension.json' );
 	grunt.initConfig( {
-		banana: {
-			all: [
-				'Canvas3DTagCloud/i18n/',
-				'TagCloud/i18n/'
-			]
-		},
+		banana: conf.MessagesDirs,
 		jsonlint: {
 			all: [
 				'**/*.json',

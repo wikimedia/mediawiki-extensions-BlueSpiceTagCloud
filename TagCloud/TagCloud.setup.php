@@ -1,2 +1,0 @@
-<?php
-wfLoadExtension( 'BlueSpiceTagCloud/TagCloud' );

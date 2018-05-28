@@ -1,5 +1,5 @@
 {
-	"name": "TagCloud",
+	"name": "BlueSpiceTagCloud",
 	"license-name": "GPL-3.0-only",
 	"version": "3.0.0-alpha",
 	"url": "https://help.bluespice.com/index.php/TagCloud",
@@ -9,15 +9,15 @@
 	"descriptionmsg": "bs-tagcloud-desc",
 	"type": "bluespice",
 	"bsgExtensions": {
-		"TagCloud": {
+		"BlueSpiceTagCloud": {
 			"className": "TagCloud",
-			"extPath": "/BlueSpiceTagCloud/TagCloud",
+			"extPath": "/BlueSpiceTagCloud",
 			"package": "BlueSpice Pro",
 			"status": "beta"
 		}
 	},
 	"MessagesDirs": {
-		"TagCloud": [
+		"BlueSpiceTagCloud": [
 			"i18n"
 		]
 	},
@@ -29,16 +29,26 @@
 		"TagCloudBaseViewHandler": "includes/TagCloudBaseViewHandler.class.php",
 		"TagCloudCategoryHandler": "includes/Handler/TagCloudCategoryHandler.class.php",
 		"TagCloudTextViewHandler": "includes/ViewHandler/TagCloudTextViewHandler.class.php",
-		"TagCloudListViewHandler": "includes/ViewHandler/TagCloudListViewHandler.class.php"
+		"TagCloudListViewHandler": "includes/ViewHandler/TagCloudListViewHandler.class.php",
+		"TagCloudCanvas3DViewHandler": "includes/ViewHandler/TagCloudCanvas3DViewHandler.class.php"
 	},
 	"ResourceModules": {
 		"ext.bluespice.tagCloud.textView": {
 			"styles": "bluespice.tagCloud.textView.css"
+		},
+		"ext.bluespice.canvas3DTagCloud.canvas3DView": {
+			"scripts": [
+				"jQuery.tagCanvas/jQuery.tagcanvas.2.9.min.js",
+				"bluespice.canvas3DTagCloud.js"
+			],
+			"dependencies": [
+				"ext.bluespice"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
-		"remoteExtPath": "BlueSpiceTagCloud/TagCloud/resources"
+		"remoteExtPath": "BlueSpiceTagCloud/resources"
 	},
 	"manifest_version": 1
 }

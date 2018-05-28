@@ -1,8 +1,0 @@
-{
-	"@metadata": {
-		"authors": [
-			"Patric Wirth <wirth@hallowelt.com>"
-		]
-	},
-	"bs-canvas3dtagcloud-desc": "Fügt den 3D canvas view zur TagCloud Extensions hinzu."
-}

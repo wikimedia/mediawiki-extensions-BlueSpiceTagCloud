@@ -40,6 +40,7 @@ class TagCloud extends BsExtensionMW {
 	protected static $aViewHandlers = array(
 		'text' => array( 'class' => 'TagCloudTextViewHandler' ),
 		'list' => array( 'class' => 'TagCloudListViewHandler' ),
+		'canvas3d' => [ 'class' => 'TagCloudCanvas3DViewHandler' ],
 	);
 	protected static $sDefaultViewHandlerType = 'text';
 	protected static $bRegister = false;
