@@ -1,5 +1,5 @@
 {
-	"name": "mediawiki/blue-spice-tag-cloud",
+	"name": "bluespice/tagcloud",
 	"type": "mediawiki-extension",
 	"description": "Displays various tag clouds",
 	"license": "GPL-3.0-only",
@@ -19,5 +19,8 @@
 		"fix": [
 			"minus-x fix ."
 		]
+	},
+	"extra": {
+		"installer-name": "BlueSpiceTagCloud"
 	}
 }
