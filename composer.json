@@ -1,8 +1,11 @@
 {
-  "name": "mediawiki/blue-spice-tag-cloud",
+  "name": "bluespice/tagcloud",
   "type": "mediawiki-extension",
   "description": "Displays various tag clouds",
   "require": {
     "composer/installers": "~1.0"
+  },
+  "extra": {
+    "installer-name": "BlueSpiceTagCloud"
   }
 }
