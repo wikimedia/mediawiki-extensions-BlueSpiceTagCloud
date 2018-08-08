@@ -5,5 +5,6 @@
 		]
 	},
 	"bs-tagcloud-desc": "Displays various tag clouds",
-	"bs-tagcloud-error-tagtype": "Given $1 is not a valid handler."
+	"bs-tagcloud-error-tagtype": "Given value \"$1\" is not a valid store.",
+	"bs-tagcloud-error-tagrenderer": "Given value \"$1\" is not a valid renderer."
 }

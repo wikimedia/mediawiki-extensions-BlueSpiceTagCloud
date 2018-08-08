@@ -1,5 +1,7 @@
 <?php
+
 /**
+ * TagCloud extension for BlueSpice
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,12 +20,18 @@
  * For further information visit http://bluespice.com
  *
  * @author     Patric Wirth <wirth@hallowelt.com>
- * @package    BluespiceTagCloud
+ * @package    BlueSpiceTagCloud
+ * @subpackage TagCloud
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
  * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
  * @filesource
  */
-interface TagCloudValidator {
-	public static function sanitizeArrayEntry( $sInput, &$aArgs, Parser $oParser, $oErrorListView );
-	public static function validateArrayEntry( $sInput, &$aArgs, Parser $oParser, $oErrorListView );
-}
+
+namespace BlueSpice\TagCloud;
+
+/**
+ * Base class for TagCloud extension
+ * @package BlueSpice_Extensions
+ * @subpackage TagCloud
+ */
+class Extension extends \BlueSpice\Extension {}
