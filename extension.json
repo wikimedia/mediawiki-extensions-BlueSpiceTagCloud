@@ -8,18 +8,31 @@
 	],
 	"descriptionmsg": "bs-tagcloud-desc",
 	"type": "bluespice",
-	"bsgExtensions": {
-		"BlueSpiceTagCloud": {
-			"className": "TagCloud",
-			"extPath": "/BlueSpiceTagCloud",
-			"package": "BlueSpice Pro",
-			"status": "beta"
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceTagCloud": {
+					"className": "TagCloud",
+					"extPath": "/BlueSpiceTagCloud",
+					"package": "BlueSpice Pro",
+					"status": "beta"
+				}
+			}
+		}
+	},
+	"requires": {
+		"MediaWiki": ">= 1.31.0",
+		"extensions": {
+			"BlueSpiceFoundation": "*"
 		}
 	},
 	"MessagesDirs": {
 		"BlueSpiceTagCloud": [
 			"i18n"
 		]
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\TagCloud\\": "src/"
 	},
 	"AutoloadClasses": {
 		"TagCloud": "TagCloud.class.php",
@@ -50,5 +63,5 @@
 		"localBasePath": "resources",
 		"remoteExtPath": "BlueSpiceTagCloud/resources"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }
