@@ -24,7 +24,7 @@
 			"RendererRegistry": {
 				"tagcloudtext": "\\BlueSpice\\TagCloud\\Renderer\\TagCloud\\Text",
 				"tagcloudlist": "\\BlueSpice\\TagCloud\\Renderer\\TagCloud\\LinkList",
-				"tagcloudcanvas3d": "\\BlueSpice\\TagCloud\\Renderer\\TagCloud\\Canvas3d"
+				"tagcloudcanvas3d": "\\BlueSpice\\TagCloud\\Renderer\\TagCloud\\Canvas3D"
 			}
 		},
 		"BlueSpiceTagCloud": {
