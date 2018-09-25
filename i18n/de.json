@@ -5,5 +5,6 @@
 		]
 	},
 	"bs-tagcloud-desc": "Zeigt verschiedene Tag-Clouds",
-	"bs-tagcloud-error-tagtype": "Angegebener $1 ist kein gültiger Handler."
+	"bs-tagcloud-error-tagtype": "Angegebener Wert $1 ist kein gültiger Speicher.",
+	"bs-tagcloud-error-tagrenderer": "Angegebener Wert $1 ist kein gültiger Renderer."
 }
