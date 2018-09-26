@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25"
+		]
+	},
+	"bs-tagcloud-desc": "يعرض سحب الوسوم المختلفة",
+	"bs-tagcloud-error-tagtype": "القيمة المعطاة \"$1\" ليست متجرا صحيحا.",
+	"bs-tagcloud-error-tagrenderer": "القيمة المعطاة \"$1\" ليست عارضا صحيحا."
+}

@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Patric Wirth <wirth@hallowelt.com>"
+			"Patric Wirth <wirth@hallowelt.com>",
+			"Metalhead64"
 		]
 	},
 	"bs-tagcloud-desc": "Zeigt verschiedene Tag-Clouds",
-	"bs-tagcloud-error-tagtype": "Angegebener Wert $1 ist kein gültiger Speicher.",
-	"bs-tagcloud-error-tagrenderer": "Angegebener Wert $1 ist kein gültiger Renderer."
+	"bs-tagcloud-error-tagtype": "Der angegebene Wert „$1“ ist kein gültiger Speicher.",
+	"bs-tagcloud-error-tagrenderer": "Der angegebene Wert „$1“ ist kein gültiger Renderer."
 }

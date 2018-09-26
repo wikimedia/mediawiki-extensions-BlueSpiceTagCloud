@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"bs-tagcloud-desc": "顯示各個標籤雲",
+	"bs-tagcloud-error-tagtype": "指定值「$1」不是有效的儲存。",
+	"bs-tagcloud-error-tagrenderer": "指定值「$1」不是有效的呈現。"
+}

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"BadDog"
+		]
+	},
+	"bs-tagcloud-desc": "Приказује разне облаке ознака",
+	"bs-tagcloud-error-tagtype": "Дата вредност „$1” није важеће складиште.",
+	"bs-tagcloud-error-tagrenderer": "Дата вредност „$1” није важећи рендерер."
+}
