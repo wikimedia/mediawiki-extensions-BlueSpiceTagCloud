@@ -36,6 +36,11 @@
 				"list": "tagcloudlist",
 				"canvas3d": "tagcloudcanvas3d"
 			}
+		},
+		"BlueSpiceVisualEditorConnector": {
+			"PluginModules": [
+				"ext.bluespice.tagcloud.visualEditorPlugin"
+			]
 		}
 	},
 	"requires": {
@@ -66,6 +71,14 @@
 			],
 			"dependencies": [
 				"ext.bluespice"
+			]
+		},
+		"ext.bluespice.tagcloud.visualEditorPlugin": {
+			"scripts": [
+				"bs.tgcld/ui/plugin/TagCloudTag.js"
+			],
+			"messages": [
+
 			]
 		}
 	},
