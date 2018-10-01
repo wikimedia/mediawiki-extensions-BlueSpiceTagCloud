@@ -38,7 +38,7 @@
 			}
 		},
 		"BlueSpiceVisualEditorConnector": {
-			"PluginModules": [
+			"TagDefinitions": [
 				"ext.bluespice.tagcloud.visualEditorPlugin"
 			]
 		}
@@ -75,7 +75,7 @@
 		},
 		"ext.bluespice.tagcloud.visualEditorPlugin": {
 			"scripts": [
-				"bs.tgcld/ui/plugin/TagCloudTag.js"
+				"bs.tgcld/util/tag/TagCloudDefinition.js"
 			],
 			"messages": [
 

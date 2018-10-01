@@ -69,10 +69,15 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 			"100%"
 		);
 
-		$this->args[static::PARAM_SHOW_COUNT] = $params->get(
+		$showcountParam = $params->get(
 			static::PARAM_SHOW_COUNT,
 			true
-		) === true ? true : false;
+		);
+		if ( $showcountParam == false || $showcountParam === "false" ) {
+			$this->args[static::PARAM_SHOW_COUNT] = false;
+		} else {
+			$this->args[static::PARAM_SHOW_COUNT] = true;
+		}
 
 		$this->args[static::PARAM_HEADLINE] = $params->get(
 			static::PARAM_HEADLINE,

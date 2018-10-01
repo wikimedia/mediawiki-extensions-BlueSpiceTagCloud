@@ -1,12 +1,12 @@
-bs.util.registerNamespace( 'bs.tgcld.ui.plugin' );
-bs.tgcld.ui.plugin.TagCloudTag = function BsVecUiPluginTagCloudTag( component ) {
-	bs.tgcld.ui.plugin.TagCloudTag.super.call( this, component );
+bs.util.registerNamespace( 'bs.tgcld.util.tag' );
+bs.tgcld.util.tag.TagCloudDefinition = function BsVecUtilTagCloudDefinition() {
+	bs.tgcld.util.tag.TagCloudDefinition.super.call( this );
 };
 
-OO.inheritClass( bs.tgcld.ui.plugin.TagCloudTag, bs.vec.ui.plugin.Tag );
+OO.inheritClass( bs.tgcld.util.tag.TagCloudDefinition, bs.vec.util.tag.Definition );
 
-bs.tgcld.ui.plugin.TagCloudTag.prototype.getCfg = function() {
-	var cfg = bs.tgcld.ui.plugin.TagCloudTag.super.prototype.getCfg.call( this );
+bs.tgcld.util.tag.TagCloudDefinition.prototype.getCfg = function() {
+	var cfg = bs.tgcld.util.tag.TagCloudDefinition.super.prototype.getCfg.call( this );
 	return $.extend( cfg, {
 		classname : 'TagCloud',
 		name: 'tagCloud',
@@ -41,8 +41,8 @@ bs.tgcld.ui.plugin.TagCloudTag.prototype.getCfg = function() {
 			name: 'width',
 			labelMsg: '##width',
 			helpMsg: '##translate',
-			type: 'text',
-			default: '100%',
+			type: 'percent',
+			default: '100',
 			tab: 'advanced'
 		},{
 			name: 'showcount',
@@ -76,9 +76,6 @@ bs.tgcld.ui.plugin.TagCloudTag.prototype.getCfg = function() {
 	});
 };
 
-bs.vec.registerComponentPlugin(
-	bs.vec.components.TAG_REGISTRY,
-	function( component ) {
-		return new bs.tgcld.ui.plugin.TagCloudTag( component );
-	}
+bs.vec.registerTagDefinition(
+	 new bs.tgcld.util.tag.TagCloudDefinition()
 );
