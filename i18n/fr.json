@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wladek92"
+		]
+	},
+	"bs-tagcloud-desc": "Afficher différents nuages de balises",
+	"bs-tagcloud-error-tagtype": "La valeur donnée « $1 » n'est pas un magasin valide.",
+	"bs-tagcloud-error-tagrenderer": "La valeur fournie « $1 » n'est pas un moteur de rendu valide."
+}

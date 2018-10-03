@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Liuxinyu970226"
+		]
+	},
+	"bs-tagcloud-desc": "显示多个标签云",
+	"bs-tagcloud-error-tagtype": "提供的值“$1”不是有效商店。",
+	"bs-tagcloud-error-tagrenderer": "提供的值“$1”不是有效渲染器。"
+}

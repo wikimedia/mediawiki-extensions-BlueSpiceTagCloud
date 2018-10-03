@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"bs-tagcloud-desc": "Apresenta várias nuvens de etiquetas",
+	"bs-tagcloud-error-tagtype": "O valor fornecido \"$1\" não é um repositório válido.",
+	"bs-tagcloud-error-tagrenderer": "O valor fornecido \"$1\" não é um compositor de imagens válido."
+}

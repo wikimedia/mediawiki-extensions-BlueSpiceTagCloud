@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira"
+		]
+	},
+	"bs-tagcloud-desc": "Exibe várias nuvens de etiquetas",
+	"bs-tagcloud-error-tagtype": "O valor determinado \"$1\" não é um repositório válido.",
+	"bs-tagcloud-error-tagrenderer": "O valor determinado \"$1\" não é um renderizador válido."
+}
