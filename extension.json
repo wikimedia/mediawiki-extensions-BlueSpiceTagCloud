@@ -77,8 +77,32 @@
 			"scripts": [
 				"bs.tgcld/util/tag/TagCloudDefinition.js"
 			],
+			"styles": [
+				"bs.tgcld/oojs.icon.css"
+			],
 			"messages": [
-
+				"bs-tagcloud-tag-tagcloud-name",
+				"bs-tagcloud-tag-tagcloud-title",
+				"bs-tagcloud-tag-tagcloud-desc",
+				"bs-tagcloud-tag-tagcloud-attr-renderer-label",
+				"bs-tagcloud-tag-tagcloud-attr-renderer-help",
+				"bs-tagcloud-tag-tagcloud-attr-renderer-option-text",
+				"bs-tagcloud-tag-tagcloud-attr-renderer-option-list",
+				"bs-tagcloud-tag-tagcloud-attr-renderer-option-canvas3d",
+				"bs-tagcloud-tag-tagcloud-attr-store-label",
+				"bs-tagcloud-tag-tagcloud-attr-store-help",
+				"bs-tagcloud-tag-tagcloud-attr-store-option-category",
+				"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats",
+				"bs-tagcloud-tag-tagcloud-attr-width-label",
+				"bs-tagcloud-tag-tagcloud-attr-width-help",
+				"bs-tagcloud-tag-tagcloud-attr-showcount-label",
+				"bs-tagcloud-tag-tagcloud-attr-showcount-help",
+				"bs-tagcloud-tag-tagcloud-attr-minsize-label",
+				"bs-tagcloud-tag-tagcloud-attr-minsize-help",
+				"bs-tagcloud-tag-tagcloud-attr-maxsize-label",
+				"bs-tagcloud-tag-tagcloud-attr-maxsize-help",
+				"bs-tagcloud-tag-tagcloud-attr-exclude-label",
+				"bs-tagcloud-tag-tagcloud-attr-exclude-help"
 			]
 		}
 	},
@@ -87,7 +111,8 @@
 		"remoteExtPath": "BlueSpiceTagCloud/resources"
 	},
 	"Hooks": {
-		"BeforePageDisplay": "\\BlueSpice\\TagCloud\\Hook\\BeforePageDisplay\\AddResources::callback"
+		"BeforePageDisplay": "\\BlueSpice\\TagCloud\\Hook\\BeforePageDisplay\\AddResources::callback",
+		"BSInsertMagicAjaxGetData": "\\BlueSpice\\TagCloud\\Hook\\BSInsertMagicAjaxGetData\\TagCloud::callback"
 	},
 	"manifest_version": 2
 }
