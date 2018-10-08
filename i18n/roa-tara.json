@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"bs-tagcloud-desc": "Face 'ndrucà le nuvole de le tag",
+	"bs-tagcloud-error-tagtype": "'U valore date \"$1\" non g'è 'na memorizzazione valide.",
+	"bs-tagcloud-error-tagrenderer": "'U valore date \"$1\" non g'è 'nu render valide."
+}
