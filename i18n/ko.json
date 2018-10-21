@@ -10,6 +10,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-renderer-option-text": "텍스트",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-option-list": "목록",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-option-canvas3d": "3D",
+	"bs-tagcloud-tag-tagcloud-attr-store-help": "사용할 데이터를 선택하십시오",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "분류",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "검색어",
 	"bs-tagcloud-tag-tagcloud-attr-width-label": "너비",
