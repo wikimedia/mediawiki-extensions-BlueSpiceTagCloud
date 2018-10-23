@@ -27,5 +27,6 @@
 	"bs-tagcloud-tag-tagcloud-attr-minsize-help": "Tamanho da fonte para a entrada com o menor número de itens",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Tamanho máximo da fonte",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "Tamanho da fonte para a entrada com mais itens",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Excluir páginas"
+	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Excluir páginas",
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Não mostrar estas páginas na nuvem de etiquetas. Para especificar mais páginas, use uma lista separada por vírgulas; por exemplo, \"Página principal, Teste, AMinhaPágina\""
 }
