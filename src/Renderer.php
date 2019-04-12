@@ -4,7 +4,6 @@ namespace BlueSpice\TagCloud;
 
 use BlueSpice\Renderer\Params;
 use BlueSpice\TagCloud\Data\TagCloud\ResultSet;
-use BlueSpice\TagCloud\Context;
 use BlueSpice\TagCloud\Data\TagCloud\Record;
 use MediaWiki\Linker\LinkRenderer;
 
@@ -47,9 +46,9 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 			static::PARAM_RESULT,
 			null
 		);
-		if( !$result instanceof \BlueSpice\Data\ResultSet ) {
+		if ( !$result instanceof \BlueSpice\Data\ResultSet ) {
 			throw new \MWException(
-				__CLASS__.':'.__METHOD__.' - invalid "'.static::PARAM_RESULT
+				__CLASS__ . ':' . __METHOD__ . ' - invalid "' . static::PARAM_RESULT
 			);
 		}
 		$this->result = new ResultSet( $result );
@@ -58,9 +57,9 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 			static::PARAM_CONTEXT,
 			null
 		);
-		if( !$this->context instanceof Context ) {
+		if ( !$this->context instanceof Context ) {
 			throw new \MWException(
-				__CLASS__.':'.__METHOD__.' - invalid "'.static::PARAM_CONTEXT
+				__CLASS__ . ':' . __METHOD__ . ' - invalid "' . static::PARAM_CONTEXT
 			);
 		}
 
@@ -107,13 +106,13 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 		$this->args[static::PARAM_TAG] = 'ul';
 		$this->args[static::PARAM_CONTENT] = [];
 
-		if( !$this->args[static::PARAM_CLASS] ) {
+		if ( !$this->args[static::PARAM_CLASS] ) {
 			$this->args[static::PARAM_CLASS] = '';
 		}
 		$this->args[static::PARAM_CLASS] .=
 			" bs-tagcloud"
-			." {$this->args[static::PARAM_STORE]}"
-			." {$this->args[static::PARAM_RENDERER]}";
+			. " {$this->args[static::PARAM_STORE]}"
+			. " {$this->args[static::PARAM_RENDERER]}";
 	}
 
 	/**
@@ -125,14 +124,14 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 	}
 
 	protected function getTagSizeLogarithmic( $count, $mincount, $maxcount, $minsize, $maxsize, $tresholds = 0 ) {
-		if( !is_int( $tresholds ) || $tresholds < 2 ) {
+		if ( !is_int( $tresholds ) || $tresholds < 2 ) {
 			$tresholds = $maxsize - $minsize;
 			$treshold = 1;
 		} else {
-			$treshold = ( $maxsize - $minsize ) / ( $tresholds -1 );
+			$treshold = ( $maxsize - $minsize ) / ( $tresholds - 1 );
 		}
 		$log = $tresholds * log( $count - $mincount + 2 )
-			/ log( $maxcount - $mincount + 2 ) -1;
+			/ log( $maxcount - $mincount + 2 ) - 1;
 
 		return round( $minsize + round( $log ) * $treshold );
 	}
@@ -140,7 +139,7 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 	protected function makeTagAttribs() {
 		$attribs = parent::makeTagAttribs();
 		$attribs['style'] = '';
-		foreach( $this->makeTagStyles() as $key => $style ) {
+		foreach ( $this->makeTagStyles() as $key => $style ) {
 			$attribs['style'] .= " $key:$style;";
 		}
 		return $attribs;
@@ -152,10 +151,10 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 	}
 
 	protected function render_content( $val ) {
-		foreach( $this->result->getRecords() as $record ) {
-			$data = array_filter( (array)$record->getData(), function( $e ) {
+		foreach ( $this->result->getRecords() as $record ) {
+			$data = array_filter( (array)$record->getData(), function ( $e ) {
 				return !empty( $e );
-			});
+			} );
 			$data['weight'] = $this->getTagSizeLogarithmic(
 				$record->get( Record::COUNT, 0 ),
 				$this->result->getLowestCount(),

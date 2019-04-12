@@ -34,7 +34,7 @@ class Canvas3D extends \BlueSpice\TagCloud\Renderer {
 
 	protected function render_content( $val ) {
 		$val = parent::render_content( $val );
-		foreach( $val as &$entry ) {
+		foreach ( $val as &$entry ) {
 			$entry[ static::PARAM_SHOW_COUNT ] = $this->args[
 				static::PARAM_SHOW_COUNT
 			];
@@ -44,7 +44,7 @@ class Canvas3D extends \BlueSpice\TagCloud\Renderer {
 	}
 
 	protected function render_style( $val ) {
-		foreach( $this->makeTagStyles() as $key => $style ) {
+		foreach ( $this->makeTagStyles() as $key => $style ) {
 			$val .= " $key:'$style';";
 		}
 		return $val;
@@ -59,11 +59,11 @@ class Canvas3D extends \BlueSpice\TagCloud\Renderer {
 	}
 
 	protected function generateCanvasID( $prefix ) {
-		if( empty( static::$canvasIDs ) ) {
-			static::$canvasIDs[0] = $prefix . (string) 0;
+		if ( empty( static::$canvasIDs ) ) {
+			static::$canvasIDs[0] = $prefix . (string)0;
 			return static::$canvasIDs[0];
 		}
-		$id = count( static::$canvasIDs ) -1;
-		static::$canvasIDs[$id] = $prefix . (string) $id;
+		$id = count( static::$canvasIDs ) - 1;
+		static::$canvasIDs[$id] = $prefix . (string)$id;
 	}
 }

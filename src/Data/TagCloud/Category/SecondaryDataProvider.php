@@ -29,9 +29,9 @@ class SecondaryDataProvider extends \BlueSpice\Data\SecondaryDataProvider {
 
 	/**
 	 *
-	 * @param Record $dataSet
+	 * @param Record &$dataSet
 	 */
-	protected function doExtend( &$dataSet ){
+	protected function doExtend( &$dataSet ) {
 		$rawData = $dataSet->getData();
 
 		$title = \Title::newFromText( $rawData->{Record::NAME}, NS_CATEGORY );
