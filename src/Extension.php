@@ -23,7 +23,7 @@
  * @package    BlueSpiceTagCloud
  * @subpackage TagCloud
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
 
@@ -34,4 +34,5 @@ namespace BlueSpice\TagCloud;
  * @package BlueSpice_Extensions
  * @subpackage TagCloud
  */
-class Extension extends \BlueSpice\Extension {}
+class Extension extends \BlueSpice\Extension {
+}

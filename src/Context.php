@@ -16,7 +16,7 @@ class Context extends \BlueSpice\Context {
 	 *
 	 * @param \IContextSource $context
 	 * @param Config $config
-	 * @param \User $user | null
+	 * @param \User|null $user | null
 	 */
 	public function __construct( \IContextSource $context, Config $config, \User $user = null ) {
 		parent::__construct( $context, $config );
@@ -24,7 +24,7 @@ class Context extends \BlueSpice\Context {
 	}
 
 	public function getUser() {
-		if( $this->user ) {
+		if ( $this->user ) {
 			return $this->user;
 		}
 		return parent::getUser();

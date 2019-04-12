@@ -21,10 +21,10 @@ class ReaderParams extends \BlueSpice\TagCloud\Data\TagCloud\ReaderParams {
 	public function __construct( $params = [] ) {
 		parent::__construct( $params );
 
-		if( !empty( $params['exclude'] ) ) {
-			
+		if ( !empty( $params['exclude'] ) ) {
+
 			$excludes = [];
-			foreach( explode( ',' , $params['exclude'] ) as $exclude ) {
+			foreach ( explode( ',', $params['exclude'] ) as $exclude ) {
 				$exclude = str_replace( ' ', '_', trim( $exclude ) );
 				$excludes[] = $exclude;
 			}
@@ -33,7 +33,7 @@ class ReaderParams extends \BlueSpice\TagCloud\Data\TagCloud\ReaderParams {
 				Filter::KEY_TYPE => 'list',
 				ListValue::KEY_COMPARISON => ListValue::COMPARISON_NOT_CONTAINS,
 				ListValue::KEY_VALUE => $excludes
-			]]);
+			] ] );
 		}
 	}
 }

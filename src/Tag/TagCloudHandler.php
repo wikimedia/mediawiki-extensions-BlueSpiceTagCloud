@@ -11,10 +11,10 @@ class TagCloudHandler extends Handler {
 
 	public function handle() {
 		$storeType = '';
-		//backwards compatibility
-		if( isset( $this->processedArgs['type'] ) ) {
+		// backwards compatibility
+		if ( isset( $this->processedArgs['type'] ) ) {
 			$storeType = $this->processedArgs['type'];
-		} elseif( isset( $this->processedArgs['store'] ) ) {
+		} elseif ( isset( $this->processedArgs['store'] ) ) {
 			$storeType = $this->processedArgs['store'];
 		} else {
 			$storeType = $this->getFactory()->getDefaultStoreType();
@@ -34,10 +34,10 @@ class TagCloudHandler extends Handler {
 		$result = $store->getReader()->read( $readerParams );
 
 		$rendererType = '';
-		//backwards compatibility
-		if( isset( $this->processedArgs['viewtype'] ) ) {
+		// backwards compatibility
+		if ( isset( $this->processedArgs['viewtype'] ) ) {
 			$rendererType = $this->processedArgs['viewtype'];
-		} elseif( isset( $this->processedArgs['renderer'] ) ) {
+		} elseif ( isset( $this->processedArgs['renderer'] ) ) {
 			$rendererType = $this->processedArgs['renderer'];
 		} else {
 			$rendererType = $this->getFactory()->getDefaultRendererType();
@@ -48,7 +48,7 @@ class TagCloudHandler extends Handler {
 			Renderer::PARAM_CONTEXT => $context,
 			Renderer::PARAM_STORE => $storeType,
 			Renderer::PARAM_RENDERER => $rendererType,
-		]);
+		] );
 
 		$renderer = $this->getFactory()->getRenderer(
 			$rendererType,
