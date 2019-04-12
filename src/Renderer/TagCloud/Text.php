@@ -27,14 +27,14 @@ class Text extends \BlueSpice\TagCloud\Renderer {
 			700
 		);
 
-		if( $this->args[static::PARAM_NO_BORDER] ) {
+		if ( $this->args[static::PARAM_NO_BORDER] ) {
 			$this->args[static::PARAM_CLASS] .= ' noborder';
 		}
 	}
 
 	protected function render_content( $val ) {
 		$val = parent::render_content( $val );
-		foreach( $val as &$entry ) {
+		foreach ( $val as &$entry ) {
 			$entry[ static::PARAM_SHOW_COUNT ] = $this->args[
 				static::PARAM_SHOW_COUNT
 			];

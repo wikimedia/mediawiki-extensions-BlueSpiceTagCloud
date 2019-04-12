@@ -35,6 +35,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 	/**
 	 *
 	 * @param \Wikimedia\Rdbms\IDatabase $db
+	 * @param Context $context
 	 */
 	public function __construct( $db, Context $context ) {
 		$this->db = $db;
@@ -44,19 +45,20 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 	/**
 	 *
 	 * @param \BlueSpice\Data\ReaderParams $params
+	 * @return array
 	 */
 	public function makeData( $params ) {
 		$this->data = [];
 
 		$res = $this->db->select(
 			'categorylinks',
-			[ Record::NAME => 'cl_to', Record::COUNT => 'COUNT(cl_to)'],
+			[ Record::NAME => 'cl_to', Record::COUNT => 'COUNT(cl_to)' ],
 			$this->makePreFilterConds( $params ),
 			__METHOD__,
 			$this->makePreOptionConds( $params )
 		);
-		foreach( $res as $row ) {
-			if( count( $this->data) >= $params->getLimit() ) {
+		foreach ( $res as $row ) {
+			if ( count( $this->data ) >= $params->getLimit() ) {
 				break;
 			}
 			$this->appendRowToData( $row );
@@ -75,25 +77,25 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 		$schema = new Schema();
 		$fields = array_values( $schema->getFilterableFields() );
 		$filterFinder = new FilterFinder( $params->getFilter() );
-		foreach( $fields as $fieldName ) {
+		foreach ( $fields as $fieldName ) {
 			$filter = $filterFinder->findByField( $fieldName );
-			if( !$filter instanceof Filter ) {
+			if ( !$filter instanceof Filter ) {
 				continue;
 			}
-			if( $filter instanceof ListValue ) {
+			if ( $filter instanceof ListValue ) {
 				$values = implode( "','", $filter->getValue() );
 				$name = $this->aliasToFieldName( $fieldName );
-				if( $filter->getComparison() === ListValue::COMPARISON_CONTAINS ) {
+				if ( $filter->getComparison() === ListValue::COMPARISON_CONTAINS ) {
 					$conds[$name] = $fieldName;
 					$filter->setApplied();
 					continue;
 				}
-				if( $filter->getComparison() === ListValue::COMPARISON_NOT_CONTAINS ) {
+				if ( $filter->getComparison() === ListValue::COMPARISON_NOT_CONTAINS ) {
 					$conds[] = "$name NOT IN ('$values')";
 					$filter->setApplied();
 					continue;
 				}
-				
+
 			}
 			switch ( $filter->getComparison() ) {
 				case Numeric::COMPARISON_GREATER_THAN:
@@ -132,7 +134,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 	protected function makePreOptionConds( $params ) {
 		$conds = [
 			'GROUP BY' => 'cl_to',
-			//'LIMIT' => $params->getLimit(),
+			// 'LIMIT' => $params->getLimit(),
 			'ORDER BY' => 'COUNT(cl_to) DESC'
 		];
 
@@ -141,10 +143,10 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 
 	protected function appendRowToData( $row ) {
 		$title = \Title::newFromText( $row->{Record::NAME}, NS_CATEGORY );
-		if( !$title || !$title->userCan( 'read', $this->context->getUser() ) ) {
+		if ( !$title || !$title->userCan( 'read', $this->context->getUser() ) ) {
 			return;
 		}
-		$this->data[] = new Record( (object) [
+		$this->data[] = new Record( (object)[
 			Record::NAME => $title->getText(),
 			Record::COUNT => (int)$row->{Record::COUNT},
 			Record::LINK => '',
@@ -154,6 +156,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 	/**
 	 * cause of mysql alias resons -.-
 	 * @param type $alias
+	 * @return string
 	 */
 	protected function aliasToFieldName( $alias ) {
 		switch ( $alias ) {

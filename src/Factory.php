@@ -49,11 +49,11 @@ class Factory {
 	 * @throws \MWException
 	 */
 	public function getStore( $type, Context $context ) {
-		//backwards compatibillity
-		if( $type === 'categories' ) {
+		// backwards compatibillity
+		if ( $type === 'categories' ) {
 			$type = 'category';
 		}
-		if( !$store = $this->storeRegistry->getValue( $type, false ) ) {
+		if ( !$store = $this->storeRegistry->getValue( $type, false ) ) {
 			$msg = \Message::newFromKey( 'bs-tagcloud-error-tagtype' );
 			throw new \MWException( $msg->params( $type )->text() );
 		}
@@ -77,7 +77,7 @@ class Factory {
 	 * @throws \MWException
 	 */
 	public function getRenderer( $type, array $data = [] ) {
-		if( !$renderer = $this->rendererRegistry->getValue( $type, false ) ) {
+		if ( !$renderer = $this->rendererRegistry->getValue( $type, false ) ) {
 			$msg = \Message::newFromKey( 'bs-tagcloud-error-tagrenderer' );
 			throw new \MWException( $msg->params( $type )->text() );
 		}

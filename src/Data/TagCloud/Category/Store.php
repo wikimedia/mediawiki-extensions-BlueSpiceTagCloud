@@ -36,8 +36,9 @@ class Store implements ITagCloudStore {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param array $params
+	 * @return ReaderParams
 	 */
 	public function makeReaderParams( array $params = [] ) {
 		return new ReaderParams( $params );

@@ -11,7 +11,6 @@ class TagCloud extends BSInsertMagicAjaxGetData {
 	}
 
 	protected function doProcess() {
-
 		$descriptor = new \stdClass();
 		$descriptor->id = 'bs:tagcloud';
 		$descriptor->type = 'tag';
@@ -20,12 +19,12 @@ class TagCloud extends BSInsertMagicAjaxGetData {
 		$descriptor->code = '<bs:tagcloud />';
 		$descriptor->previewable = false;
 		$descriptor->mwvecommand = 'tagCloudCommand';
-		$descriptor->examples = array (
-			array (
+		$descriptor->examples = [
+			[
 				'label' => wfMessage( 'bs-tagcloud-tag-tagcloud-example-1' )->escaped(),
 				'code' => '<bs:tagcloud showcount="true />'
-			)
-		);
+			]
+		];
 		$descriptor->helplink = $this->getServices()->getBSExtensionFactory()
 			->getExtension( 'BlueSpiceTagCloud' )->getUrl();
 		$this->response->result[] = $descriptor;
