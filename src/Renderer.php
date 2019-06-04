@@ -123,7 +123,18 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 		return "BlueSpiceTagCloud.List";
 	}
 
-	protected function getTagSizeLogarithmic( $count, $mincount, $maxcount, $minsize, $maxsize, $tresholds = 0 ) {
+	/**
+	 *
+	 * @param int $count
+	 * @param int $mincount
+	 * @param int $maxcount
+	 * @param int $minsize
+	 * @param int $maxsize
+	 * @param int $tresholds
+	 * @return int
+	 */
+	protected function getTagSizeLogarithmic( $count, $mincount, $maxcount, $minsize,
+		$maxsize, $tresholds = 0 ) {
 		if ( !is_int( $tresholds ) || $tresholds < 2 ) {
 			$tresholds = $maxsize - $minsize;
 			$treshold = 1;
@@ -136,6 +147,10 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 		return round( $minsize + round( $log ) * $treshold );
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function makeTagAttribs() {
 		$attribs = parent::makeTagAttribs();
 		$attribs['style'] = '';
@@ -145,11 +160,21 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 		return $attribs;
 	}
 
+	/**
+	 *
+	 * @param array $styles
+	 * @return array
+	 */
 	protected function makeTagStyles( $styles = [] ) {
 		$styles[static::PARAM_WIDTH] = $this->args[static::PARAM_WIDTH];
 		return $styles;
 	}
 
+	/**
+	 *
+	 * @param mixed $val
+	 * @return mixed
+	 */
 	protected function render_content( $val ) {
 		foreach ( $this->result->getRecords() as $record ) {
 			$data = array_filter( (array)$record->getData(), function ( $e ) {

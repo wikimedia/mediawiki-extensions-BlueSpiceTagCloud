@@ -10,6 +10,10 @@ class Canvas3D extends \BlueSpice\TagCloud\Renderer {
 	const PARAM_CANVAS_ID = 'canvasid';
 	const PARAM_CANVAS_ID_TAGS = 'canvasidtags';
 
+	/**
+	 *
+	 * @var array
+	 */
 	protected static $canvasIDs = [];
 
 	/**
@@ -32,6 +36,11 @@ class Canvas3D extends \BlueSpice\TagCloud\Renderer {
 		$this->args['style'] = '';
 	}
 
+	/**
+	 *
+	 * @param mixed $val
+	 * @return mixed
+	 */
 	protected function render_content( $val ) {
 		$val = parent::render_content( $val );
 		foreach ( $val as &$entry ) {
@@ -43,6 +52,11 @@ class Canvas3D extends \BlueSpice\TagCloud\Renderer {
 		return array_values( $val );
 	}
 
+	/**
+	 *
+	 * @param mixed $val
+	 * @return mixed
+	 */
 	protected function render_style( $val ) {
 		foreach ( $this->makeTagStyles() as $key => $style ) {
 			$val .= " $key:'$style';";
@@ -58,6 +72,11 @@ class Canvas3D extends \BlueSpice\TagCloud\Renderer {
 		return "BlueSpiceTagCloud.Canvas3D";
 	}
 
+	/**
+	 *
+	 * @param string $prefix
+	 * @return string
+	 */
 	protected function generateCanvasID( $prefix ) {
 		if ( empty( static::$canvasIDs ) ) {
 			static::$canvasIDs[0] = $prefix . (string)0;
@@ -65,5 +84,6 @@ class Canvas3D extends \BlueSpice\TagCloud\Renderer {
 		}
 		$id = count( static::$canvasIDs ) - 1;
 		static::$canvasIDs[$id] = $prefix . (string)$id;
+		return static::$canvasIDs[$id];
 	}
 }
