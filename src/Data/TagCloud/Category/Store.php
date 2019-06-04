@@ -23,10 +23,18 @@ class Store implements ITagCloudStore {
 		$this->loadBalancer = Services::getInstance()->getDBLoadBalancer();
 	}
 
+	/**
+	 *
+	 * @return Reader
+	 */
 	public function getReader() {
 		return new Reader( $this->loadBalancer, $this->context );
 	}
 
+	/**
+	 *
+	 * @return Writer
+	 */
 	public function getWriter() {
 		return new Writer(
 			$this->getReader(),
