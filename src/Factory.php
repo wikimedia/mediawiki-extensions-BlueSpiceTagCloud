@@ -2,37 +2,46 @@
 
 namespace BlueSpice\TagCloud;
 
+use MWException;
+use Message;
+use Config;
+use BlueSpice\ExtensionAttributeBasedRegistry;
+use BlueSpice\RendererFactory;
+use BlueSpice\Renderer;
+use BlueSpice\Renderer\Params;
+use BlueSpice\TagCloud\Data\TagCloud\IStore;
+
 class Factory {
 
 	/**
 	 *
-	 * @var \BlueSpice\ExtensionAttributeBasedRegistry
+	 * @var ExtensionAttributeBasedRegistry
 	 */
 	protected $storeRegistry = null;
 
 	/**
 	 *
-	 * @var \BlueSpice\ExtensionAttributeBasedRegistry
+	 * @var ExtensionAttributeBasedRegistry
 	 */
 	protected $rendererRegistry = null;
 
 	/**
 	 *
-	 * @var \BlueSpice\RendererFactory
+	 * @var RendererFactory
 	 */
 	protected $rendererFactory = null;
 
 	/**
 	 *
-	 * @var \Config
+	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 * @param \BlueSpice\ExtensionAttributeBasedRegistry $storeRegistry
-	 * @param \BlueSpice\ExtensionAttributeBasedRegistry $rendererRegistry
-	 * @param \BlueSpice\RendererFactory $rendererFactory
-	 * @param \Config $config
+	 * @param ExtensionAttributeBasedRegistry $storeRegistry
+	 * @param ExtensionAttributeBasedRegistry $rendererRegistry
+	 * @param RendererFactory $rendererFactory
+	 * @param Config $config
 	 */
 	public function __construct( $storeRegistry, $rendererRegistry, $rendererFactory, $config ) {
 		$this->storeRegistry = $storeRegistry;
@@ -45,17 +54,18 @@ class Factory {
 	 *
 	 * @param string $type
 	 * @param Context $context
-	 * @return \BlueSpice\TagCloud\Data\TagCloud\IStore
-	 * @throws \MWException
+	 * @return IStore
+	 * @throws MWException
 	 */
 	public function getStore( $type, Context $context ) {
 		// backwards compatibillity
 		if ( $type === 'categories' ) {
 			$type = 'category';
 		}
-		if ( !$store = $this->storeRegistry->getValue( $type, false ) ) {
-			$msg = \Message::newFromKey( 'bs-tagcloud-error-tagtype' );
-			throw new \MWException( $msg->params( $type )->text() );
+		$store = $this->storeRegistry->getValue( $type, false );
+		if ( !$store ) {
+			$msg = Message::newFromKey( 'bs-tagcloud-error-tagtype' );
+			throw new MWException( $msg->params( $type )->text() );
 		}
 
 		return new $store( $context );
@@ -73,17 +83,18 @@ class Factory {
 	 *
 	 * @param string $type
 	 * @param array $data
-	 * @return \BlueSpice\Renderer
-	 * @throws \MWException
+	 * @return Renderer
+	 * @throws MWException
 	 */
 	public function getRenderer( $type, array $data = [] ) {
-		if ( !$renderer = $this->rendererRegistry->getValue( $type, false ) ) {
-			$msg = \Message::newFromKey( 'bs-tagcloud-error-tagrenderer' );
-			throw new \MWException( $msg->params( $type )->text() );
+		$renderer = $this->rendererRegistry->getValue( $type, false );
+		if ( !$renderer ) {
+			$msg = Message::newFromKey( 'bs-tagcloud-error-tagrenderer' );
+			throw new MWException( $msg->params( $type )->text() );
 		}
 		return $this->rendererFactory->get(
 			$renderer,
-			new \BlueSpice\Renderer\Params( $data )
+			new Params( $data )
 		);
 	}
 

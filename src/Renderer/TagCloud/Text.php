@@ -47,6 +47,11 @@ class Text extends \BlueSpice\TagCloud\Renderer {
 		}
 	}
 
+	/**
+	 *
+	 * @param mixed $val
+	 * @return mixed
+	 */
 	protected function render_content( $val ) {
 		$val = parent::render_content( $val );
 		foreach ( $val as &$entry ) {
