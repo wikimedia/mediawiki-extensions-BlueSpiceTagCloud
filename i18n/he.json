@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Erelon"
+			"Erelon",
+			"Guycn2"
 		]
 	},
-	"bs-tagcloud-tag-tagcloud-attr-renderer-option-canvas3d": "תלת־מימד"
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-canvas3d": "תלת־ממד"
 }
