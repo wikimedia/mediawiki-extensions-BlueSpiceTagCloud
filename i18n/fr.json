@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Wladek92",
-			"Gomoko"
+			"Gomoko",
+			"Thibaut120094"
 		]
 	},
 	"bs-tagcloud-desc": "Afficher différents nuages de balises",
@@ -29,5 +30,5 @@
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Taille maximale de la police",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "Taille de police pour l’entrée avec le plus d’éléments",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Exclure les pages",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Ne pas afficher ces pages dans la balise nuage. Pour plus de pages, utiliser une liste séparée par des virgules, par ex. « Page principale, Test, MaPage »"
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Ne pas afficher ces pages dans la balise nuage. Pour plus de pages, utiliser une liste séparée par des virgules, par ex. « Page principale, Test, MaPage »"
 }
