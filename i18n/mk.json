@@ -13,5 +13,6 @@
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "Категории",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Пребарај услови",
 	"bs-tagcloud-tag-tagcloud-attr-width-label": "Ширина",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Изземи страници"
+	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Изземи страници",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "Прикажи број"
 }
