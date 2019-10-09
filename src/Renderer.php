@@ -2,10 +2,13 @@
 
 namespace BlueSpice\TagCloud;
 
+use Config;
+use IContextSource;
+use MediaWiki\Linker\LinkRenderer;
 use BlueSpice\Renderer\Params;
+use BlueSpice\Utility\CacheHelper;
 use BlueSpice\TagCloud\Data\TagCloud\ResultSet;
 use BlueSpice\TagCloud\Data\TagCloud\Record;
-use MediaWiki\Linker\LinkRenderer;
 
 abstract class Renderer extends \BlueSpice\TemplateRenderer {
 	const PARAM_RENDERER = 'renderer';
@@ -28,19 +31,25 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 	protected $result = null;
 
 	/**
-	 *
-	 * @var Context
-	 */
-	protected $context = null;
-
-	/**
 	 * Constructor
-	 * @param \Config $config
+	 * @param Config $config
 	 * @param Params $params
 	 * @param LinkRenderer|null $linkRenderer
+	 * @param IContextSource|null $context
+	 * @param string $name | ''
+	 * @param CacheHelper|null $cacheHelper
 	 */
-	public function __construct( \Config $config, Params $params, LinkRenderer $linkRenderer = null ) {
-		parent::__construct( $config, $params, $linkRenderer );
+	protected function __construct( Config $config, Params $params,
+		LinkRenderer $linkRenderer = null, IContextSource $context = null,
+		$name = '', CacheHelper $cacheHelper = null ) {
+		parent::__construct(
+			$config,
+			$params,
+			$linkRenderer,
+			$context,
+			$name,
+			$cacheHelper
+		);
 
 		$result = $params->get(
 			static::PARAM_RESULT,

@@ -21,5 +21,9 @@
 	"bs-tagcloud-tag-tagcloud-attr-showcount-help": "괄호 안의 항목 수를 표시합니다",
 	"bs-tagcloud-tag-tagcloud-attr-minsize-label": "최소 글꼴 크기",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "최대 글꼴 크기",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "태그 클라우드에 이 문서들을 표시하지 않습니다. 더 많은 문서의 경우 쉼표 구분 목록을 사용하십시오. (예: \"주 문서, 테스트, 내문서\")"
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "태그 클라우드에 이 문서들을 표시하지 않습니다. 더 많은 문서의 경우 쉼표 구분 목록을 사용하십시오. (예: \"주 문서, 테스트, 내문서\")",
+	"bs-tagcloud-error-tagtype": "지정된 \"$1\" 값은 유효한 스토어가 아닙니다.",
+	"bs-tagcloud-error-tagrenderer": "지정된 \"$1\" 값은 유효한 렌더러가 아닙니다.",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-label": "유형",
+	"bs-tagcloud-tag-tagcloud-attr-store-label": "스토어"
 }

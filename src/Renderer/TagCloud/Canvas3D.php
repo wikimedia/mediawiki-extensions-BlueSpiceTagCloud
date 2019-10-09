@@ -2,8 +2,11 @@
 
 namespace BlueSpice\TagCloud\Renderer\TagCloud;
 
-use BlueSpice\Renderer\Params;
+use Config;
+use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
+use BlueSpice\Renderer\Params;
+use BlueSpice\Utility\CacheHelper;
 
 class Canvas3D extends \BlueSpice\TagCloud\Renderer {
 	const PARAM_CANVAS_ID_PREFIX = 'canvasidprefix';
@@ -18,12 +21,24 @@ class Canvas3D extends \BlueSpice\TagCloud\Renderer {
 
 	/**
 	 * Constructor
-	 * @param \Config $config
+	 * @param Config $config
 	 * @param Params $params
 	 * @param LinkRenderer|null $linkRenderer
+	 * @param IContextSource|null $context
+	 * @param string $name | ''
+	 * @param CacheHelper|null $cacheHelper
 	 */
-	public function __construct( \Config $config, Params $params, LinkRenderer $linkRenderer = null ) {
-		parent::__construct( $config, $params, $linkRenderer );
+	protected function __construct( Config $config, Params $params,
+		LinkRenderer $linkRenderer = null, IContextSource $context = null,
+		$name = '', CacheHelper $cacheHelper = null ) {
+		parent::__construct(
+			$config,
+			$params,
+			$linkRenderer,
+			$context,
+			$name,
+			$cacheHelper
+		);
 
 		$this->args[static::PARAM_TAG] = 'div';
 		$this->args[static::PARAM_CANVAS_ID] = $params->get(
