@@ -15,5 +15,6 @@
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Términos de búsqueda",
 	"bs-tagcloud-tag-tagcloud-attr-width-label": "Anchura",
 	"bs-tagcloud-tag-tagcloud-attr-width-help": "Porcentaje de anchura de la nube de etiquetas",
-	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "Mostrar recuento"
+	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "Mostrar recuento",
+	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Excluir páginas"
 }
