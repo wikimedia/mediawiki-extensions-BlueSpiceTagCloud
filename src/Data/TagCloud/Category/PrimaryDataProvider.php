@@ -2,7 +2,7 @@
 
 namespace BlueSpice\TagCloud\Data\TagCloud\Category;
 
-use \BlueSpice\Data\IPrimaryDataProvider;
+use BlueSpice\Data\IPrimaryDataProvider;
 use BlueSpice\Data\FilterFinder;
 use BlueSpice\Data\Filter;
 use BlueSpice\Data\Filter\StringValue;
