@@ -2,9 +2,9 @@
 
 namespace BlueSpice\TagCloud;
 
+use BlueSpice\Config;
 use IContextSource;
 use User;
-use BlueSpice\Config;
 
 class Context extends \BlueSpice\Context {
 

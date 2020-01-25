@@ -2,13 +2,13 @@
 
 namespace BlueSpice\TagCloud;
 
+use BlueSpice\Renderer\Params;
+use BlueSpice\TagCloud\Data\TagCloud\Record;
+use BlueSpice\TagCloud\Data\TagCloud\ResultSet;
+use BlueSpice\Utility\CacheHelper;
 use Config;
 use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
-use BlueSpice\Renderer\Params;
-use BlueSpice\Utility\CacheHelper;
-use BlueSpice\TagCloud\Data\TagCloud\ResultSet;
-use BlueSpice\TagCloud\Data\TagCloud\Record;
 
 abstract class Renderer extends \BlueSpice\TemplateRenderer {
 	const PARAM_RENDERER = 'renderer';

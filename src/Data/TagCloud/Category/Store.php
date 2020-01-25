@@ -2,9 +2,9 @@
 
 namespace BlueSpice\TagCloud\Data\TagCloud\Category;
 
-use BlueSpice\TagCloud\Data\TagCloud\IStore as ITagCloudStore;
-use BlueSpice\TagCloud\Context;
 use BlueSpice\Services;
+use BlueSpice\TagCloud\Context;
+use BlueSpice\TagCloud\Data\TagCloud\IStore as ITagCloudStore;
 
 class Store implements ITagCloudStore {
 

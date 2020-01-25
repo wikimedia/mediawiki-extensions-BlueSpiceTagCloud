@@ -2,14 +2,14 @@
 
 namespace BlueSpice\TagCloud;
 
-use MWException;
-use Message;
-use Config;
 use BlueSpice\ExtensionAttributeBasedRegistry;
-use BlueSpice\RendererFactory;
 use BlueSpice\Renderer;
 use BlueSpice\Renderer\Params;
+use BlueSpice\RendererFactory;
 use BlueSpice\TagCloud\Data\TagCloud\IStore;
+use Config;
+use Message;
+use MWException;
 
 class Factory {
 

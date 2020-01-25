@@ -2,11 +2,11 @@
 
 namespace BlueSpice\TagCloud\Renderer\TagCloud;
 
+use BlueSpice\Renderer\Params;
+use BlueSpice\Utility\CacheHelper;
 use Config;
 use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
-use BlueSpice\Renderer\Params;
-use BlueSpice\Utility\CacheHelper;
 
 class Text extends \BlueSpice\TagCloud\Renderer {
 	const PARAM_NO_BORDER = 'noborder';
