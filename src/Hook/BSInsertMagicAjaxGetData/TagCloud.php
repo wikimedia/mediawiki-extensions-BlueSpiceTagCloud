@@ -14,15 +14,14 @@ class TagCloud extends BSInsertMagicAjaxGetData {
 		$descriptor = new \stdClass();
 		$descriptor->id = 'bs:tagcloud';
 		$descriptor->type = 'tag';
-		$descriptor->name = wfMessage( 'bs-tagcloud-tag-tagcloud-name' )->escaped();
+		$descriptor->name = 'tagcloud';
 		$descriptor->desc = wfMessage( 'bs-tagcloud-tag-tagcloud-desc' )->escaped();
 		$descriptor->code = '<bs:tagcloud />';
 		$descriptor->previewable = false;
 		$descriptor->mwvecommand = 'tagCloudCommand';
 		$descriptor->examples = [
 			[
-				'label' => wfMessage( 'bs-tagcloud-tag-tagcloud-example-1' )->escaped(),
-				'code' => '<bs:tagcloud showcount="true />'
+				'code' => '<bs:tagcloud showcount="true" />'
 			]
 		];
 		$descriptor->helplink = $this->getServices()->getBSExtensionFactory()
