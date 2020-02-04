@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Mjälten"
 		]
 	},
 	"bs-tagcloud-tag-tagcloud-name": "Taggmoln",
@@ -16,5 +17,6 @@
 	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "Visa antal",
 	"bs-tagcloud-tag-tagcloud-attr-minsize-label": "Minimal typsnittsstorlek",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Maximal typsnittsstorlek",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Exkludera sidor:"
+	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Exkludera sidor:",
+	"bs-tagcloud-tag-tagcloud-attr-store-label": "Spara"
 }
