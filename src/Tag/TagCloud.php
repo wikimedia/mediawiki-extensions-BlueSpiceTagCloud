@@ -86,4 +86,24 @@ class TagCloud extends \BlueSpice\Tag\Tag {
 		];
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
+	public function getResourceLoaderModuleStyles(): array {
+		return [
+			'ext.bluespice.tagcloud.text.styles'
+		];
+	}
+
+	/**
+	 *
+	 * @return array
+	 */
+	public function getResourceLoaderModules(): array {
+		return [
+			'ext.bluespice.tagcloud.canvas3d'
+		];
+	}
+
 }
