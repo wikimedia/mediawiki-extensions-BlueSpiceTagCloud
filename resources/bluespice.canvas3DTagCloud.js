@@ -1,7 +1,6 @@
 ( function( mw, $ ){
 	$( document ).ready( function() {
 		$( 'Canvas[id^="bs-tagcloud-canvas3d-"]').each( function() {
-			//$( this ).height( $( this ).parent().first().outerWidth() );
 			var $tagConvas = $( this ).tagcanvas( {
 				textColour: '#3e5389',
 				outlineColour: '#3e5389',
@@ -16,7 +15,6 @@
 				shadowOffset: [1,1],
 				txtScale: 10,
 				zoom: 1
-				
 			});
 			if( !$tagConvas ) {
 				$( this ).hide();

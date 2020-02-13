@@ -111,7 +111,6 @@
 		"remoteExtPath": "BlueSpiceTagCloud/resources"
 	},
 	"Hooks": {
-		"BeforePageDisplay": "\\BlueSpice\\TagCloud\\Hook\\BeforePageDisplay\\AddResources::callback",
 		"BSInsertMagicAjaxGetData": "\\BlueSpice\\TagCloud\\Hook\\BSInsertMagicAjaxGetData\\TagCloud::callback"
 	},
 	"manifest_version": 2
