@@ -24,7 +24,7 @@ class TagCloud extends BSInsertMagicAjaxGetData {
 				'code' => '<bs:tagcloud showcount="true" />'
 			]
 		];
-		$descriptor->helplink = $this->getServices()->getBSExtensionFactory()
+		$descriptor->helplink = $this->getServices()->getService( 'BSExtensionFactory' )
 			->getExtension( 'BlueSpiceTagCloud' )->getUrl();
 		$this->response->result[] = $descriptor;
 
