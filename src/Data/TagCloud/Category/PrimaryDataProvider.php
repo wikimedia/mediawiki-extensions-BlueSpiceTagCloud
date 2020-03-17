@@ -148,7 +148,8 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 	 */
 	protected function appendRowToData( $row ) {
 		$title = \Title::newFromText( $row->{Record::NAME}, NS_CATEGORY );
-		if ( !$title || !$title->userCan( 'read', $this->context->getUser() ) ) {
+		$pm = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
+		if ( !$title || !$pm->userCan( 'read', $this->context->getUser(), $title ) ) {
 			return;
 		}
 		$this->data[] = new Record( (object)[
