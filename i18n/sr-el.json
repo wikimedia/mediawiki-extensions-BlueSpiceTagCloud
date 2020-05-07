@@ -1,5 +1,7 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": []
+	},
 	"bs-tagcloud-desc": "Prikazuje razne oblake sa oznakama",
 	"bs-tagcloud-error-tagtype": "Zadata vrednost „$1” nije važeće skladište.",
 	"bs-tagcloud-error-tagrenderer": "Zadata vrednost „$1” nije važeći renderer.",

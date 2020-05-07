@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Patric Wirth",
-			"Metalhead64"
+			"Metalhead64",
+			"Patric Wirth"
 		]
 	},
 	"bs-tagcloud-desc": "Zeigt verschiedene Tag-Clouds",
