@@ -2,9 +2,9 @@
 
 namespace BlueSpice\TagCloud\Data\TagCloud\Category;
 
-use BlueSpice\Services;
 use BlueSpice\TagCloud\Context;
 use BlueSpice\TagCloud\Data\TagCloud\IStore as ITagCloudStore;
+use MediaWiki\MediaWikiServices;
 
 class Store implements ITagCloudStore {
 
@@ -20,7 +20,7 @@ class Store implements ITagCloudStore {
 	 */
 	public function __construct( Context $context ) {
 		$this->context = $context;
-		$this->loadBalancer = Services::getInstance()->getDBLoadBalancer();
+		$this->loadBalancer = MediaWikiServices::getInstance()->getDBLoadBalancer();
 	}
 
 	/**
