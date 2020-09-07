@@ -2,10 +2,10 @@
 
 namespace BlueSpice\TagCloud\Tag;
 
-use BlueSpice\Services;
 use BlueSpice\Tag\Handler;
 use BlueSpice\TagCloud\Context;
 use BlueSpice\TagCloud\Renderer;
+use MediaWiki\MediaWikiServices;
 
 class TagCloudHandler extends Handler {
 
@@ -22,7 +22,7 @@ class TagCloudHandler extends Handler {
 
 		$context = new Context(
 			\RequestContext::getMain(),
-			Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' ),
+			MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' ),
 			$this->parser->getUser()
 		);
 		$store = $this->getFactory()->getStore( $storeType, $context );
@@ -62,6 +62,6 @@ class TagCloudHandler extends Handler {
 	 * @return \BlueSpice\TagCloud\Factory
 	 */
 	protected function getFactory() {
-		return Services::getInstance()->getService( 'BSTagCloudFactory' );
+		return MediaWikiServices::getInstance()->getService( 'BSTagCloudFactory' );
 	}
 }
