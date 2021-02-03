@@ -144,7 +144,6 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 	/**
 	 *
 	 * @param \stdClass $row
-	 * @return null
 	 */
 	protected function appendRowToData( $row ) {
 		$title = \Title::newFromText( $row->{Record::NAME}, NS_CATEGORY );
