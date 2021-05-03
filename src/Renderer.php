@@ -186,7 +186,7 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 	 */
 	protected function render_content( $val ) {
 		foreach ( $this->result->getRecords() as $record ) {
-			$data = array_filter( (array)$record->getData(), function ( $e ) {
+			$data = array_filter( (array)$record->getData(), static function ( $e ) {
 				return !empty( $e );
 			} );
 			$data['weight'] = $this->getTagSizeLogarithmic(

@@ -21,7 +21,7 @@ class ResultSet extends \BlueSpice\Data\ResultSet {
 		if ( $numRecords < 1 ) {
 			return 0;
 		}
-		usort( $this->records, function ( $a, $b ) {
+		usort( $this->records, static function ( $a, $b ) {
 			if ( $a->get( Record::COUNT, 0 ) === $b->get( Record::COUNT, 0 ) ) {
 				return 0;
 			}
@@ -40,7 +40,7 @@ class ResultSet extends \BlueSpice\Data\ResultSet {
 		if ( count( $this->records ) < 1 ) {
 			return 0;
 		}
-		usort( $this->records, function ( $a, $b ) {
+		usort( $this->records, static function ( $a, $b ) {
 			if ( $a->get( Record::COUNT, 0 ) === $b->get( Record::COUNT, 0 ) ) {
 				return 0;
 			}

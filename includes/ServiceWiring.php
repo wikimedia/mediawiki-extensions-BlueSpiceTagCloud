@@ -5,7 +5,7 @@ use MediaWiki\MediaWikiServices;
 
 return [
 
-	'BSTagCloudFactory' => function ( MediaWikiServices $services ) {
+	'BSTagCloudFactory' => static function ( MediaWikiServices $services ) {
 		$handlerRegistry = new ExtensionAttributeBasedRegistry(
 			'BlueSpiceTagCloudStoreRegistry'
 		);
