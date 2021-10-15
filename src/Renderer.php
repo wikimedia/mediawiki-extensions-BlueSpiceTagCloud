@@ -11,18 +11,18 @@ use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
 
 abstract class Renderer extends \BlueSpice\TemplateRenderer {
-	const PARAM_RENDERER = 'renderer';
-	const PARAM_STORE = 'store';
+	public const PARAM_RENDERER = 'renderer';
+	public const PARAM_STORE = 'store';
 
-	const PARAM_RESULT = 'result';
-	const PARAM_CONTEXT = 'context';
+	public const PARAM_RESULT = 'result';
+	public const PARAM_CONTEXT = 'context';
 
-	const PARAM_WIDTH = 'width';
-	const PARAM_SHOW_COUNT = 'showcount';
-	const PARAM_HEADLINE = 'title';
+	public const PARAM_WIDTH = 'width';
+	public const PARAM_SHOW_COUNT = 'showcount';
+	public const PARAM_HEADLINE = 'title';
 
-	const PARAM_MINSIZE = 'minsize';
-	const PARAM_MAXSIZE = 'maxsize';
+	public const PARAM_MINSIZE = 'minsize';
+	public const PARAM_MAXSIZE = 'maxsize';
 
 	/**
 	 *

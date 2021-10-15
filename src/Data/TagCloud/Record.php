@@ -3,8 +3,8 @@
 namespace BlueSpice\TagCloud\Data\TagCloud;
 
 class Record extends \BlueSpice\Data\Record {
-	const NAME = 'name';
-	const COUNT = 'count';
-	const LINK = 'link';
-	const RENDEREDLINK = 'renderedlink';
+	public const NAME = 'name';
+	public const COUNT = 'count';
+	public const LINK = 'link';
+	public const RENDEREDLINK = 'renderedlink';
 }
