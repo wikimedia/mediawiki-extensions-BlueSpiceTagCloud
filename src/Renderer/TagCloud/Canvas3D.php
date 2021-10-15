@@ -9,9 +9,9 @@ use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
 
 class Canvas3D extends \BlueSpice\TagCloud\Renderer {
-	const PARAM_CANVAS_ID_PREFIX = 'canvasidprefix';
-	const PARAM_CANVAS_ID = 'canvasid';
-	const PARAM_CANVAS_ID_TAGS = 'canvasidtags';
+	public const PARAM_CANVAS_ID_PREFIX = 'canvasidprefix';
+	public const PARAM_CANVAS_ID = 'canvasid';
+	public const PARAM_CANVAS_ID_TAGS = 'canvasidtags';
 
 	/**
 	 *
