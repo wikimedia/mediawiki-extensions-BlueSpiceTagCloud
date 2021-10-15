@@ -9,7 +9,7 @@ use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
 
 class Text extends \BlueSpice\TagCloud\Renderer {
-	const PARAM_NO_BORDER = 'noborder';
+	public const PARAM_NO_BORDER = 'noborder';
 
 	/**
 	 * Constructor
