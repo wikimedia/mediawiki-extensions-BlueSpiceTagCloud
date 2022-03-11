@@ -25,5 +25,6 @@
 	"bs-tagcloud-error-tagtype": "지정된 \"$1\" 값은 유효한 스토어가 아닙니다.",
 	"bs-tagcloud-error-tagrenderer": "지정된 \"$1\" 값은 유효한 렌더러가 아닙니다.",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-label": "유형",
-	"bs-tagcloud-tag-tagcloud-attr-store-label": "스토어"
+	"bs-tagcloud-tag-tagcloud-attr-store-label": "스토어",
+	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "문서 제외"
 }
