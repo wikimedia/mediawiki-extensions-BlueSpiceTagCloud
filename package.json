@@ -1,4 +1,5 @@
 {
+	"name": "BlueSpiceTagCloud",
 	"private": true,
 	"scripts": {
 		"test": "grunt test"
