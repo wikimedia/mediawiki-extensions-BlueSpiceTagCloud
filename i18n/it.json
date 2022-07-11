@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Beta16"
+			"Beta16",
+			"GpieroMW"
 		]
 	},
 	"bs-tagcloud-tag-tagcloud-attr-renderer-label": "Tipo",
@@ -15,5 +16,6 @@
 	"bs-tagcloud-tag-tagcloud-attr-showcount-help": "Mostra il numero di elementi tra parentesi",
 	"bs-tagcloud-tag-tagcloud-attr-minsize-label": "Dimensione minima carattere",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Dimensione massima carattere",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Escludi pagine"
+	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Escludi pagine",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "Mostra conteggio"
 }
