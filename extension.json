@@ -41,6 +41,13 @@
 			"TagDefinitions": [
 				"ext.bluespice.tagcloud.visualEditorPlugin"
 			]
+		},
+		"ContentDroplets": {
+			"Droplets": {
+				"tagcloud": {
+					"class": "\\BlueSpice\\TagCloud\\ContentDroplets\\TagCloudDroplet"
+				}
+			}
 		}
 	},
 	"requires": {
