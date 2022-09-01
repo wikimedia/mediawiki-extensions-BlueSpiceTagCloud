@@ -55,37 +55,7 @@ class TagCloudDroplet extends TagDroplet {
 	 * @return array
 	 */
 	protected function getAttributes(): array {
-		return [
-			'renderer' => [
-				[
-					[ 'data' ] => 'text',
-					[ 'label' ] => Message::newFromKey( 'bs-tagcloud-tag-tagcloud-attr-renderer-option-text' )
-				],
-				[
-					[ 'data' ] => 'list',
-					[ 'label' ] => Message::newFromKey( 'bs-tagcloud-tag-tagcloud-attr-renderer-option-list' )
-				],
-				[
-					[ 'data' ] => 'canvas3d',
-					[ 'label' ] => Message::newFromKey( 'bs-tagcloud-tag-tagcloud-attr-renderer-option-canvas3d' )
-				]
-			],
-			'store' => [
-				[
-					[ 'data' ] => 'category',
-					[ 'label' ] => Message::newFromKey( 'bs-tagcloud-tag-tagcloud-attr-store-option-category' )
-				],
-				[
-					[ 'data' ] => 'searchstats',
-					[ 'label' ] => Message::newFromKey( 'bs-tagcloud-tag-tagcloud-attr-store-option-searchstats' )
-				]
-			],
-			'width' => 100,
-			'showcount' => true,
-			'minsize' => 5,
-			'maxsize' => 30,
-			'exclude' => ''
-		];
+		return [];
 	}
 
 	/**
