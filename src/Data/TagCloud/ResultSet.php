@@ -2,13 +2,15 @@
 
 namespace BlueSpice\TagCloud\Data\TagCloud;
 
-class ResultSet extends \BlueSpice\Data\ResultSet {
+use MWStake\MediaWiki\Component\DataStore\ResultSet as DataStoreResultSet;
+
+class ResultSet extends DataStoreResultSet {
 
 	/**
 	 *
-	 * @param \BlueSpice\Data\ResultSet[] $result
+	 * @param DataStoreResultSet[] $result
 	 */
-	public function __construct( \BlueSpice\Data\ResultSet $result ) {
+	public function __construct( DataStoreResultSet $result ) {
 		parent::__construct( $result->getRecords(), $result->getTotal() );
 	}
 

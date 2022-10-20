@@ -4,7 +4,7 @@ namespace BlueSpice\TagCloud\Data\TagCloud\Category;
 
 use BlueSpice\TagCloud\Data\TagCloud\Record;
 
-class SecondaryDataProvider extends \BlueSpice\Data\SecondaryDataProvider {
+class SecondaryDataProvider extends \MWStake\MediaWiki\Component\DataStore\SecondaryDataProvider {
 
 	/**
 	 *

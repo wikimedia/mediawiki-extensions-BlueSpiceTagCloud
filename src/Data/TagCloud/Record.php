@@ -2,7 +2,7 @@
 
 namespace BlueSpice\TagCloud\Data\TagCloud;
 
-class Record extends \BlueSpice\Data\Record {
+class Record extends \MWStake\MediaWiki\Component\DataStore\Record {
 	public const NAME = 'name';
 	public const COUNT = 'count';
 	public const LINK = 'link';
