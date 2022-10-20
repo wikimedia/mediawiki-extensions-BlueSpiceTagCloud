@@ -2,7 +2,7 @@
 
 namespace BlueSpice\TagCloud\Data\TagCloud;
 
-class ReaderParams extends \BlueSpice\Data\ReaderParams {
+class ReaderParams extends \MWStake\MediaWiki\Component\DataStore\ReaderParams {
 
 	/**
 	 * For paging

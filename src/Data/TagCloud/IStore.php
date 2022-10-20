@@ -4,7 +4,7 @@ namespace BlueSpice\TagCloud\Data\TagCloud;
 
 use BlueSpice\TagCloud\Context;
 
-interface IStore extends \BlueSpice\Data\IStore {
+interface IStore extends \MWStake\MediaWiki\Component\DataStore\IStore {
 
 	/**
 	 *

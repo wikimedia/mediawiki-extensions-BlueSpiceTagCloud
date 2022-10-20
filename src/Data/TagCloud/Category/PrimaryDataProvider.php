@@ -2,15 +2,16 @@
 
 namespace BlueSpice\TagCloud\Data\TagCloud\Category;
 
-use BlueSpice\Data\Filter;
-use BlueSpice\Data\Filter\ListValue;
-use BlueSpice\Data\Filter\Numeric;
-use BlueSpice\Data\Filter\StringValue;
-use BlueSpice\Data\FilterFinder;
-use BlueSpice\Data\IPrimaryDataProvider;
 use BlueSpice\TagCloud\Context;
 use BlueSpice\TagCloud\Data\TagCloud\Record;
 use BlueSpice\TagCloud\Data\TagCloud\Schema;
+use MWStake\MediaWiki\Component\DataStore\Filter;
+use MWStake\MediaWiki\Component\DataStore\Filter\ListValue;
+use MWStake\MediaWiki\Component\DataStore\Filter\Numeric;
+use MWStake\MediaWiki\Component\DataStore\Filter\StringValue;
+use MWStake\MediaWiki\Component\DataStore\FilterFinder;
+use MWStake\MediaWiki\Component\DataStore\IPrimaryDataProvider;
+use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 
 class PrimaryDataProvider implements IPrimaryDataProvider {
 
@@ -44,7 +45,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 
 	/**
 	 *
-	 * @param \BlueSpice\Data\ReaderParams $params
+	 * @param ReaderParams $params
 	 * @return array
 	 */
 	public function makeData( $params ) {
@@ -69,7 +70,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 
 	/**
 	 *
-	 * @param \BlueSpice\Data\ReaderParams $params
+	 * @param ReaderParams $params
 	 * @return array
 	 */
 	protected function makePreFilterConds( $params ) {
@@ -128,7 +129,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 
 	/**
 	 *
-	 * @param \BlueSpice\Data\ReaderParams $params
+	 * @param ReaderParams $params
 	 * @return array
 	 */
 	protected function makePreOptionConds( $params ) {

@@ -2,9 +2,9 @@
 
 namespace BlueSpice\TagCloud\Data\TagCloud\Category;
 
-use BlueSpice\Data\DatabaseReader;
 use BlueSpice\TagCloud\Data\TagCloud\Schema;
 use MediaWiki\MediaWikiServices;
+use MWStake\MediaWiki\Component\DataStore\DatabaseReader;
 
 class Reader extends DatabaseReader {
 	/**

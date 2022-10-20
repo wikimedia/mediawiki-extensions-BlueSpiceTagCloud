@@ -9,6 +9,7 @@ use BlueSpice\Utility\CacheHelper;
 use Config;
 use IContextSource;
 use MediaWiki\Linker\LinkRenderer;
+use MWStake\MediaWiki\Component\DataStore\ResultSet as DataStoreResultSet;
 
 abstract class Renderer extends \BlueSpice\TemplateRenderer {
 	public const PARAM_RENDERER = 'renderer';
@@ -55,7 +56,7 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 			static::PARAM_RESULT,
 			null
 		);
-		if ( !$result instanceof \BlueSpice\Data\ResultSet ) {
+		if ( !$result instanceof DataStoreResultSet ) {
 			throw new \MWException(
 				__CLASS__ . ':' . __METHOD__ . ' - invalid "' . static::PARAM_RESULT
 			);

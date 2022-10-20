@@ -2,9 +2,9 @@
 
 namespace BlueSpice\TagCloud\Data\TagCloud\Category;
 
-use BlueSpice\Data\Filter;
-use BlueSpice\Data\Filter\ListValue;
 use BlueSpice\TagCloud\Data\TagCloud\Record;
+use MWStake\MediaWiki\Component\DataStore\Filter;
+use MWStake\MediaWiki\Component\DataStore\Filter\ListValue;
 
 class ReaderParams extends \BlueSpice\TagCloud\Data\TagCloud\ReaderParams {
 
