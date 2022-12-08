@@ -12,6 +12,7 @@ use MWStake\MediaWiki\Component\DataStore\Filter\StringValue;
 use MWStake\MediaWiki\Component\DataStore\FilterFinder;
 use MWStake\MediaWiki\Component\DataStore\IPrimaryDataProvider;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
+use TrackingCategories;
 
 class PrimaryDataProvider implements IPrimaryDataProvider {
 
@@ -50,7 +51,14 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 	 */
 	public function makeData( $params ) {
 		$this->data = [];
-
+		$trackingCategoriesTitles = [];
+		$trackingCategories = new TrackingCategories( $this->context->getConfig() );
+		$categoryList = $trackingCategories->getTrackingCategories();
+		foreach( $categoryList as $key => $config ) {
+			foreach( $config[ 'cats' ] as $title ) {
+				$trackingCategoriesTitles[] = $title->getDBKey();
+			} 
+		}
 		$res = $this->db->select(
 			'categorylinks',
 			[ Record::NAME => 'cl_to', Record::COUNT => 'COUNT(cl_to)' ],
@@ -62,9 +70,11 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 			if ( count( $this->data ) >= $params->getLimit() ) {
 				break;
 			}
+			if( in_array($row->{Record::NAME}, $trackingCategoriesTitles ) ) {
+				continue;
+			}
 			$this->appendRowToData( $row );
 		}
-
 		return $this->data;
 	}
 
@@ -96,7 +106,6 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 					$filter->setApplied();
 					continue;
 				}
-
 			}
 			switch ( $filter->getComparison() ) {
 				case Numeric::COMPARISON_GREATER_THAN:
@@ -123,7 +132,6 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 			}
 			$filter->setApplied();
 		}
-
 		return $conds;
 	}
 
