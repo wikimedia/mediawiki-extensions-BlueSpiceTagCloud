@@ -4,7 +4,6 @@ namespace BlueSpice\TagCloud\ContentDroplets;
 
 use MediaWiki\Extension\ContentDroplets\Droplet\TagDroplet;
 use Message;
-use RawMessage;
 
 class TagCloudDroplet extends TagDroplet {
 
@@ -12,21 +11,21 @@ class TagCloudDroplet extends TagDroplet {
 	 * @inheritDoc
 	 */
 	public function getName(): Message {
-		return new RawMessage( 'TagCloud' );
+		return Message::newFromKey( 'bs-tagcloud-droplet-name' );
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getDescription(): Message {
-		return new RawMessage( "TagCloud description" );
+		return Message::newFromKey( 'bs-tagcloud-droplet-description' );
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getIcon(): string {
-		return 'tag';
+		return 'droplet-tagcloud';
 	}
 
 	/**
