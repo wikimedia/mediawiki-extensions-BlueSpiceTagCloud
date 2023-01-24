@@ -85,6 +85,7 @@
 				"bs.tgcld/util/tag/TagCloudDefinition.js"
 			],
 			"styles": [
+				"bluespice.tagcloud.droplet.css",
 				"bs.tgcld/oojs.icon.css"
 			],
 			"messages": [
