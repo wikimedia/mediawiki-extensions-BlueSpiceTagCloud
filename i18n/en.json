@@ -28,5 +28,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Max font size",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "Font size for the entry with the most items",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Exclude pages",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Do not show these pages in the tag cloud. For more pages, use a comma separated list, e.g. \"Main Page, Test, MyPage\""
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Do not show these pages in the tag cloud. For more pages, use a comma separated list, e.g. \"Main Page, Test, MyPage\"",
+	"bs-tagcloud-droplet-name": "Tag cloud",
+	"bs-tagcloud-droplet-description": "Tag cloud based on categories or search queries"
 }
