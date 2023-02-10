@@ -31,8 +31,8 @@ class TagCloudDroplet extends TagDroplet {
 	/**
 	 * @inheritDoc
 	 */
-	public function getRLModule(): string {
-		return 'ext.bluespice.tagcloud.visualEditorPlugin';
+	public function getRLModules(): array {
+		return [ 'ext.bluespice.tagcloud.visualEditorPlugin' ];
 	}
 
 	/**
