@@ -19,7 +19,6 @@ class TagCloudHandler extends Handler {
 		} else {
 			$storeType = $this->getFactory()->getDefaultStoreType();
 		}
-
 		$context = new Context(
 			\RequestContext::getMain(),
 			MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' ),
