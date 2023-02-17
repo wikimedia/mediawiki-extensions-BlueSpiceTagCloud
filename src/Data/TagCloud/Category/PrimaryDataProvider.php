@@ -35,13 +35,20 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 	protected $context = null;
 
 	/**
+	 * @var TrackingCategories
+	 */
+	private $trackingCategories = null;
+
+	/**
 	 *
 	 * @param \Wikimedia\Rdbms\IDatabase $db
 	 * @param Context $context
+	 * @param TrackingCategories $trackingCategories
 	 */
-	public function __construct( $db, Context $context ) {
+	public function __construct( $db, Context $context, TrackingCategories $trackingCategories ) {
 		$this->db = $db;
 		$this->context = $context;
+		$this->trackingCategories = $trackingCategories;
 	}
 
 	/**
@@ -52,8 +59,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 	public function makeData( $params ) {
 		$this->data = [];
 		$trackingCategoriesTitles = [];
-		$trackingCategories = new TrackingCategories( $this->context->getConfig() );
-		$categoryList = $trackingCategories->getTrackingCategories();
+		$categoryList = $this->trackingCategories->getTrackingCategories();
 		foreach ( $categoryList as $key => $config ) {
 			foreach ( $config[ 'cats' ] as $title ) {
 				$trackingCategoriesTitles[] = $title->getDBKey();

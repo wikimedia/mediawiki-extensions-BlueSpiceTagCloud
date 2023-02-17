@@ -22,7 +22,9 @@ class Reader extends DatabaseReader {
 	 * @return PrimaryDataProvider
 	 */
 	protected function makePrimaryDataProvider( $params ) {
-		return new PrimaryDataProvider( $this->db, $this->context );
+		$services = MediaWikiServices::getInstance();
+		$trackingCategories = $services->getTrackingCategories();
+		return new PrimaryDataProvider( $this->db, $this->context, $trackingCategories );
 	}
 
 	/**

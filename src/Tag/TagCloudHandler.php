@@ -5,9 +5,38 @@ namespace BlueSpice\TagCloud\Tag;
 use BlueSpice\Tag\Handler;
 use BlueSpice\TagCloud\Context;
 use BlueSpice\TagCloud\Renderer;
+use ConfigFactory;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\User\UserFactory;
+use Parser;
+use PPFrame;
 
 class TagCloudHandler extends Handler {
+
+	/**
+	 * @var UserFactory
+	 */
+	private $userFactory = null;
+
+	/**
+	 * @var ConfigFactory
+	 */
+	private $configFactory = null;
+
+	/**
+	 * @param string $input
+	 * @param array $args
+	 * @param Parser $parser
+	 * @param PPFrame $frame
+	 * @param UserFactory $userFactory
+	 * @param ConfigFactory $configFactory
+	 */
+	public function __construct( $input, array $args, Parser $parser,
+		 PPFrame $frame, UserFactory $userFactory, ConfigFactory $configFactory ) {
+		parent::__construct( $input, $args, $parser, $frame );
+		$this->userFactory = $userFactory;
+		$this->configFactory = $configFactory;
+	}
 
 	public function handle() {
 		$storeType = '';
@@ -19,10 +48,14 @@ class TagCloudHandler extends Handler {
 		} else {
 			$storeType = $this->getFactory()->getDefaultStoreType();
 		}
+
+		$user = $this->userFactory->newFromUserIdentity( $this->parser->getUserIdentity() );
+		$config = $this->configFactory->makeConfig( 'bsg' );
+
 		$context = new Context(
 			\RequestContext::getMain(),
-			MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' ),
-			$this->parser->getUser()
+			$config,
+			$user
 		);
 		$store = $this->getFactory()->getStore( $storeType, $context );
 
