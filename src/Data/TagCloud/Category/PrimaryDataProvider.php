@@ -54,10 +54,10 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 		$trackingCategoriesTitles = [];
 		$trackingCategories = new TrackingCategories( $this->context->getConfig() );
 		$categoryList = $trackingCategories->getTrackingCategories();
-		foreach( $categoryList as $key => $config ) {
-			foreach( $config[ 'cats' ] as $title ) {
+		foreach ( $categoryList as $key => $config ) {
+			foreach ( $config[ 'cats' ] as $title ) {
 				$trackingCategoriesTitles[] = $title->getDBKey();
-			} 
+			}
 		}
 		$res = $this->db->select(
 			'categorylinks',
@@ -70,7 +70,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 			if ( count( $this->data ) >= $params->getLimit() ) {
 				break;
 			}
-			if( in_array($row->{Record::NAME}, $trackingCategoriesTitles ) ) {
+			if ( in_array( $row->{Record::NAME}, $trackingCategoriesTitles ) ) {
 				continue;
 			}
 			$this->appendRowToData( $row );
