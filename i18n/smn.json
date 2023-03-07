@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yupik"
+			"Yupik",
+			"Seipinne"
 		]
 	},
+	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "Luokah",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Uuccâmsäänih"
 }
