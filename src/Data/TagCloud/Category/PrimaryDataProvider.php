@@ -59,6 +59,10 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 				$trackingCategoriesTitles[] = $title->getDBKey();
 			}
 		}
+		$typeCategoryExclude = $this->context->getConfig()->get( 'TagCloudTypeCategoryExclude' );
+		$typeCategoryExclude = array_map( static function ( $value ) {
+			return str_replace( ' ', '_', $value );
+		}, $typeCategoryExclude );
 		$res = $this->db->select(
 			'categorylinks',
 			[ Record::NAME => 'cl_to', Record::COUNT => 'COUNT(cl_to)' ],
@@ -71,6 +75,9 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 				break;
 			}
 			if ( in_array( $row->{Record::NAME}, $trackingCategoriesTitles ) ) {
+				continue;
+			}
+			if ( in_array( $row->{Record::NAME}, $typeCategoryExclude ) ) {
 				continue;
 			}
 			$this->appendRowToData( $row );
