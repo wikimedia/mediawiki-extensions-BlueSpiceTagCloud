@@ -28,5 +28,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Dimension maxime de litteras",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "Grandor del typo de litteras pro le entrata con le numero major de elementos",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Excluder paginas",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Non monstrar iste paginas in le etiquettario. Pro plus paginas, usa un lista separate per commas, p.ex. \"Pagina principal, Test, MiPagina\""
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Non monstrar iste paginas in le etiquettario. Pro plus paginas, usa un lista separate per commas, p.ex. \"Pagina principal, Test, MiPagina\"",
+	"bs-tagcloud-droplet-name": "Etiquettario",
+	"bs-tagcloud-droplet-description": "Nube de etiquettas basate sur categorias o consultas de recerca"
 }
