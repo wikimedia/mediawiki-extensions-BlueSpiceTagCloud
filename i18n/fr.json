@@ -31,5 +31,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Taille maximale de la police",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "Taille de police pour l’entrée avec le plus d’éléments",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Exclure les pages",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Ne pas afficher ces pages dans le nuage de balises. Pour plus de pages, utiliser une liste séparée par des virgules, par ex. « Page principale, Test, MaPage »"
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Ne pas afficher ces pages dans le nuage de balises. Pour plus de pages, utiliser une liste séparée par des virgules, par ex. « Page principale, Test, MaPage »",
+	"bs-tagcloud-droplet-name": "Nuage de balises",
+	"bs-tagcloud-droplet-description": "Nuage de balises basé sur des catégories ou des requêtes de recherche"
 }

@@ -28,5 +28,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Največja velikost pisave",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "Velikost pisave za vnos z največ predmeti",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Izključi strani",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "V oblaku oznak ne prikaži teh strani. Za več strani uporabite seznam, ločen z vejico, npr. »Glavna stran, Test, MojaStran«."
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "V oblaku oznak ne prikaži teh strani. Za več strani uporabite seznam, ločen z vejico, npr. »Glavna stran, Test, MojaStran«.",
+	"bs-tagcloud-droplet-name": "Oblak oznak",
+	"bs-tagcloud-droplet-description": "Oblak oznak na podlagi kategorij ali iskalnih poizvedb"
 }
