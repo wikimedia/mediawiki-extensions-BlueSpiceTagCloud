@@ -30,5 +30,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-minsize-label": "Minimale lettergrootte",
 	"bs-tagcloud-tag-tagcloud-attr-minsize-help": "Lettergrootte voor de vermelding met de minste onderdelen",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "Lettergrootte voor de vermelding met de meeste onderdelen",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Deze pagina's niet in de woordwolk weergeven. Gebruik voor meer pagina's een door komma's gescheiden lijst, bv. \"Hoofdpagina, Test, MijnPagina\""
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Deze pagina's niet in de woordwolk weergeven. Gebruik voor meer pagina's een door komma's gescheiden lijst, bv. \"Hoofdpagina, Test, MijnPagina\"",
+	"bs-tagcloud-droplet-name": "Woordwolk",
+	"bs-tagcloud-droplet-description": "Woordwolk op basis van categorieën of zoekopdrachten"
 }
