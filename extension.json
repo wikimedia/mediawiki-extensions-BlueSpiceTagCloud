@@ -67,6 +67,13 @@
 	"AutoloadNamespaces": {
 		"BlueSpice\\TagCloud\\": "src/"
 	},
+	"config_prefix": "bsgTagCloud",
+	"config": {
+		"TypeCategoryExclude": {
+			"value": [],
+			"public": false
+		}
+	},
 	"ResourceModules": {
 		"ext.bluespice.tagcloud.text.styles": {
 			"styles": "bluespice.tagCloud.textView.css"
