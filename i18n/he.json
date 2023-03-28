@@ -30,5 +30,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "גודל גופן מרבי",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "גודל גופן עבור הערך עם הכי הרבה פריטים",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "ללא הדפים האלה",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "לא להציג את הדפים האלה בענן התגים. לדפים נוספים, להשתמש ברשימה מופרדת בפסיקים, למשל \"עמוד ראשי, בדיקה, דף שלי\""
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "לא להציג את הדפים האלה בענן התגים. לדפים נוספים, להשתמש ברשימה מופרדת בפסיקים, למשל \"עמוד ראשי, בדיקה, דף שלי\"",
+	"bs-tagcloud-droplet-name": "ענן תגים",
+	"bs-tagcloud-droplet-description": "ענן תגים מבוסס על קטגוריות או שאילתות חיפוש"
 }
