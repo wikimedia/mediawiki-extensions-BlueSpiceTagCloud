@@ -42,3 +42,10 @@
 .bs-tagcloud.text.noborder {
 	border:none !important;
 }
+
+.ve-active .bs-tagcloud.canvas3d {
+	background-image: url('./images/placeholder_cloud.svg' );
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 200px;
+}
