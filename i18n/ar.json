@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Alshamiri1",
 			"Meno25",
 			"ديفيد"
 		]
@@ -29,5 +30,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "حجم الخط الأقصى",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "حجم الخط للإدخال مع أكثر العناصر",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "استبعاد الصفحات",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "لا تعرض هذه الصفحات في سحابة الوسم، لمزيد من الصفحات; استخدم قائمة مفصولة بفواصل، مثل \"الصفحة الرئيسية، تجربة، صفحتي\""
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "لا تعرض هذه الصفحات في سحابة الوسم، لمزيد من الصفحات; استخدم قائمة مفصولة بفواصل، مثل \"الصفحة الرئيسية، تجربة، صفحتي\"",
+	"bs-tagcloud-droplet-name": "سحابة وسم",
+	"bs-tagcloud-droplet-description": "سحابة الوسم على أساس الفئات أو استفسارات البحث"
 }
