@@ -28,5 +28,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "最大字型大小",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "用於帶最多項目的項之字體大小",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "排除的頁面",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "請不要在標籤雲顯示這些頁面。要更多頁面請使用逗號分隔的清單，例如：Main Page, Test, MyPage"
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "請不要在標籤雲顯示這些頁面。要更多頁面請使用逗號分隔的清單，例如：Main Page, Test, MyPage",
+	"bs-tagcloud-droplet-name": "標籤雲",
+	"bs-tagcloud-droplet-description": "根據分類或搜尋查詢的標籤雲"
 }
