@@ -28,5 +28,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Maksimal skriftstørrelse",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "Skriftstørrelse for oppføringen med flest elementer",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Ekskluder sider",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Ikke vis disse sidene i taggskyen. For flere sider, bruk en kommaatskilt liste, f.eks. «Hovedside, Test, Min side»"
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Ikke vis disse sidene i taggskyen. For flere sider, bruk en kommaatskilt liste, f.eks. «Hovedside, Test, Min side»",
+	"bs-tagcloud-droplet-name": "Taggsky",
+	"bs-tagcloud-droplet-description": "Taggsky basert på kategorier eller søk"
 }
