@@ -126,7 +126,6 @@
 		"remoteExtPath": "BlueSpiceTagCloud/resources"
 	},
 	"Hooks": {
-		"BSInsertMagicAjaxGetData": "\\BlueSpice\\TagCloud\\Hook\\BSInsertMagicAjaxGetData\\TagCloud::callback",
 		"BSUEModulePDFgetPage": "\\BlueSpice\\TagCloud\\Hook\\BSUEModulePDFgetPage\\TagCloudText::callback"
 	},
 	"manifest_version": 2
