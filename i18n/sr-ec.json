@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"BadDog"
+			"BadDog",
+			"Kizule"
 		]
 	},
 	"bs-tagcloud-desc": "Приказује разне облаке са ознакама",
@@ -28,5 +29,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Највећа величина фонта",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "Величина фонта за унос са највише ставки",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Изузми странице",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Не приказујте ове странице у облаку са ознакама. За више страница, користите листу раздвојену зарезима, нпр. „Главна страна”, Тест, Моја страница”"
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Не приказујте ове странице у облаку са ознакама. За више страница, користите листу раздвојену зарезима, нпр. „Главна страна”, Тест, Моја страница”",
+	"bs-tagcloud-droplet-name": "Облак са ознакама",
+	"bs-tagcloud-droplet-description": "Облаци са ознакама базирани на категоријама или упитима за претрагу"
 }
