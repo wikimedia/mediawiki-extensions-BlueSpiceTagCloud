@@ -26,5 +26,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Najveća veličina fonta",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "Veličina fonta za unos sa najviše stavki",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Izuzmi stranice",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Ne prikazujte ove stranice u oblaku sa oznakama. Za više stranica, koristite listu razdvojenu zarezima, npr. „Glavna strana”, Test, Moja stranica”"
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Ne prikazujte ove stranice u oblaku sa oznakama. Za više stranica, koristite listu razdvojenu zarezima, npr. „Glavna strana”, Test, Moja stranica”",
+	"bs-tagcloud-droplet-name": "Oblak sa oznakama",
+	"bs-tagcloud-droplet-description": "Oblaci sa oznakama bazirani na kategorijama ili upitima za pretragu"
 }
