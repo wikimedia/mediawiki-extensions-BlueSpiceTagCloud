@@ -28,5 +28,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Dimenzione massime d'u carattere",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "Dimenzione d'u carattere pe le vôsce cu cchiù eleminde",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Esclude le pàggene",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "No fà 'ndrucà ste pàggene jndr'à nuvole de le tag. Pe cchiù pàggene, ause 'n'elenghe separate cu 'a virgole, e.g. \"Pàgena Prengepàle, Test, Pàgena meje\""
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "No fà 'ndrucà ste pàggene jndr'à nuvole de le tag. Pe cchiù pàggene, ause 'n'elenghe separate cu 'a virgole, e.g. \"Pàgena Prengepàle, Test, Pàgena meje\"",
+	"bs-tagcloud-droplet-name": "Nuvole de le tag",
+	"bs-tagcloud-droplet-description": "'A nuvole de le tag se base sus a le categorije o le 'nderrogaziune de recerche"
 }
