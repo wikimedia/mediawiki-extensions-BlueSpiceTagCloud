@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Kareyac",
-			"Link2xt"
+			"Link2xt",
+			"Yurina Tatiana"
 		]
 	},
 	"bs-tagcloud-tag-tagcloud-name": "Облако меток",
@@ -16,5 +17,6 @@
 	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "Показать количество",
 	"bs-tagcloud-tag-tagcloud-attr-minsize-label": "Минимальный размер шрифта",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Максимальный размер шрифта",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Исключить страницы"
+	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Исключить страницы",
+	"bs-tagcloud-droplet-name": "Облако меток"
 }
