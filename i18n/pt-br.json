@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Eduardo Addad de Oliveira",
-			"Eduardoaddad"
+			"Eduardoaddad",
+			"Vinickw"
 		]
 	},
 	"bs-tagcloud-desc": "Exibe várias nuvens de etiquetas",
@@ -16,7 +17,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-renderer-option-text": "Texto",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-option-list": "Lista",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-option-canvas3d": "3D",
-	"bs-tagcloud-tag-tagcloud-attr-store-label": "História",
+	"bs-tagcloud-tag-tagcloud-attr-store-label": "Armazenar",
 	"bs-tagcloud-tag-tagcloud-attr-store-help": "Selecione quais dados usar",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "Categorias",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Termos de pesquisa",
