@@ -5,6 +5,7 @@ namespace BlueSpice\TagCloud\Data\TagCloud\Category;
 use BlueSpice\TagCloud\Context;
 use BlueSpice\TagCloud\Data\TagCloud\Record;
 use BlueSpice\TagCloud\Data\TagCloud\Schema;
+use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\DataStore\Filter;
 use MWStake\MediaWiki\Component\DataStore\Filter\ListValue;
 use MWStake\MediaWiki\Component\DataStore\Filter\Numeric;
@@ -168,7 +169,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 	 * @param \stdClass $row
 	 */
 	protected function appendRowToData( $row ) {
-		$title = \Title::newFromText( $row->{Record::NAME}, NS_CATEGORY );
+		$title = Title::newFromText( $row->{Record::NAME}, NS_CATEGORY );
 		$pm = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
 		if ( !$title || !$pm->userCan( 'read', $this->context->getUser(), $title ) ) {
 			return;
