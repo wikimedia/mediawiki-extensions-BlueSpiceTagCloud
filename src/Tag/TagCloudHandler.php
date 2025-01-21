@@ -6,6 +6,7 @@ use BlueSpice\Tag\Handler;
 use BlueSpice\TagCloud\Context;
 use BlueSpice\TagCloud\Renderer;
 use ConfigFactory;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\User\UserFactory;
 use Parser;
@@ -53,7 +54,7 @@ class TagCloudHandler extends Handler {
 		$config = $this->configFactory->makeConfig( 'bsg' );
 
 		$context = new Context(
-			\RequestContext::getMain(),
+			RequestContext::getMain(),
 			$config,
 			$user
 		);
