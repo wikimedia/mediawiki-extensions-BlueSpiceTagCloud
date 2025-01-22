@@ -8,7 +8,7 @@ use BlueSpice\Renderer\Params;
 use BlueSpice\RendererFactory;
 use BlueSpice\TagCloud\Data\TagCloud\IStore;
 use Config;
-use Message;
+use MediaWiki\Message\Message;
 use MWException;
 
 class Factory {
