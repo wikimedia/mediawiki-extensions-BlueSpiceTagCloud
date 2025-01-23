@@ -6,8 +6,8 @@ use BlueSpice\Renderer\Params;
 use BlueSpice\TagCloud\Data\TagCloud\Record;
 use BlueSpice\TagCloud\Data\TagCloud\ResultSet;
 use BlueSpice\Utility\CacheHelper;
-use IContextSource;
 use MediaWiki\Config\Config;
+use MediaWiki\Context\IContextSource;
 use MediaWiki\Linker\LinkRenderer;
 use MWStake\MediaWiki\Component\DataStore\ResultSet as DataStoreResultSet;
 

@@ -4,8 +4,8 @@ namespace BlueSpice\TagCloud\Renderer\TagCloud;
 
 use BlueSpice\Renderer\Params;
 use BlueSpice\Utility\CacheHelper;
-use IContextSource;
 use MediaWiki\Config\Config;
+use MediaWiki\Context\IContextSource;
 use MediaWiki\Linker\LinkRenderer;
 
 class Text extends \BlueSpice\TagCloud\Renderer {
