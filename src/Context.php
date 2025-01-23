@@ -3,7 +3,7 @@
 namespace BlueSpice\TagCloud;
 
 use BlueSpice\Config;
-use IContextSource;
+use MediaWiki\Context\IContextSource;
 use MediaWiki\User\User;
 
 class Context extends \BlueSpice\Context {
@@ -20,7 +20,7 @@ class Context extends \BlueSpice\Context {
 	 * @param Config $config
 	 * @param User|null $user | null
 	 */
-	public function __construct( \IContextSource $context, Config $config, User $user = null ) {
+	public function __construct( IContextSource $context, Config $config, User $user = null ) {
 		parent::__construct( $context, $config );
 		$this->user = $user;
 	}
