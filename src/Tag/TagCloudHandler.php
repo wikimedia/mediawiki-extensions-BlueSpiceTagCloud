@@ -9,8 +9,8 @@ use ConfigFactory;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Parser\Parser;
+use MediaWiki\Parser\PPFrame;
 use MediaWiki\User\UserFactory;
-use PPFrame;
 
 class TagCloudHandler extends Handler {
 
