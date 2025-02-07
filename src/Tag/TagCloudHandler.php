@@ -5,7 +5,7 @@ namespace BlueSpice\TagCloud\Tag;
 use BlueSpice\Tag\Handler;
 use BlueSpice\TagCloud\Context;
 use BlueSpice\TagCloud\Renderer;
-use ConfigFactory;
+use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Parser\Parser;
