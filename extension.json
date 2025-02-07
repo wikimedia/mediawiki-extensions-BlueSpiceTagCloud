@@ -48,6 +48,13 @@
 					"class": "\\BlueSpice\\TagCloud\\ContentDroplets\\TagCloudDroplet"
 				}
 			}
+		},
+		"PDFCreator": {
+			"Processors": {
+				"removeTagCloudStyle": {
+					"class": "\\BlueSpice\\TagCloud\\Integration\\PDFCreator\\Processor\\RemoveTagCloudStyle"
+				}
+			}
 		}
 	},
 	"requires": {
@@ -124,9 +131,6 @@
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
 		"remoteExtPath": "BlueSpiceTagCloud/resources"
-	},
-	"Hooks": {
-		"BSUEModulePDFgetPage": "\\BlueSpice\\TagCloud\\Hook\\BSUEModulePDFgetPage\\TagCloudText::callback"
 	},
 	"manifest_version": 2
 }
