@@ -8,8 +8,8 @@ use BlueSpice\TagCloud\Renderer;
 use ConfigFactory;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Parser\Parser;
 use MediaWiki\User\UserFactory;
-use Parser;
 use PPFrame;
 
 class TagCloudHandler extends Handler {
