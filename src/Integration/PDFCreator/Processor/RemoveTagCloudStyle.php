@@ -30,4 +30,11 @@ class RemoveTagCloudStyle implements IProcessor {
 			}
 		}
 	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function getPosition(): int {
+		return 50;
+	}
 }
