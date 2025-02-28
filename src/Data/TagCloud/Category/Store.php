@@ -5,6 +5,7 @@ namespace BlueSpice\TagCloud\Data\TagCloud\Category;
 use BlueSpice\TagCloud\Context;
 use BlueSpice\TagCloud\Data\TagCloud\IStore as ITagCloudStore;
 use MediaWiki\MediaWikiServices;
+use Wikimedia\Rdbms\ILoadBalancer;
 
 class Store implements ITagCloudStore {
 
@@ -13,6 +14,9 @@ class Store implements ITagCloudStore {
 	 * @var Context
 	 */
 	protected $context = null;
+
+	/** @var ILoadBalancer */
+	protected $loadBalancer;
 
 	/**
 	 *
