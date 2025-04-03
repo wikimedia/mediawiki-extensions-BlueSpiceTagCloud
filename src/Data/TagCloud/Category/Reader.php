@@ -13,14 +13,12 @@ class Reader extends DatabaseReader {
 	 * @param \Wikimedia\Rdbms\LoadBalancer $loadBalancer
 	 * @param IContextSource|null $context
 	 */
-	public function __construct( $loadBalancer, IContextSource $context = null ) {
+	public function __construct( $loadBalancer, ?IContextSource $context = null ) {
 		parent::__construct( $loadBalancer, $context, $context->getConfig() );
 	}
 
 	/**
-	 *
-	 * @param type $params
-	 * @return PrimaryDataProvider
+	 * @inheritDoc
 	 */
 	protected function makePrimaryDataProvider( $params ) {
 		$services = MediaWikiServices::getInstance();
