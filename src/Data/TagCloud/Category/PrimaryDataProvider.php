@@ -5,6 +5,7 @@ namespace BlueSpice\TagCloud\Data\TagCloud\Category;
 use BlueSpice\TagCloud\Context;
 use BlueSpice\TagCloud\Data\TagCloud\Record;
 use BlueSpice\TagCloud\Data\TagCloud\Schema;
+use MediaWiki\Category\TrackingCategories;
 use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\DataStore\Filter;
 use MWStake\MediaWiki\Component\DataStore\Filter\ListValue;
@@ -13,7 +14,6 @@ use MWStake\MediaWiki\Component\DataStore\Filter\StringValue;
 use MWStake\MediaWiki\Component\DataStore\FilterFinder;
 use MWStake\MediaWiki\Component\DataStore\IPrimaryDataProvider;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
-use TrackingCategories;
 
 class PrimaryDataProvider implements IPrimaryDataProvider {
 
