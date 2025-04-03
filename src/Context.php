@@ -20,7 +20,7 @@ class Context extends \BlueSpice\Context {
 	 * @param Config $config
 	 * @param User|null $user | null
 	 */
-	public function __construct( IContextSource $context, Config $config, User $user = null ) {
+	public function __construct( IContextSource $context, Config $config, ?User $user = null ) {
 		parent::__construct( $context, $config );
 		$this->user = $user;
 	}
