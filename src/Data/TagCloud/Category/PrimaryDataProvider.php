@@ -183,7 +183,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 
 	/**
 	 * cause of mysql alias resons -.-
-	 * @param type $alias
+	 * @param string $alias
 	 * @return string
 	 */
 	protected function aliasToFieldName( $alias ) {
