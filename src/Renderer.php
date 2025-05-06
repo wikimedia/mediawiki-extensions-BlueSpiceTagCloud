@@ -185,7 +185,7 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 	 * @param mixed $val
 	 * @return mixed
 	 */
-	protected function render_content( $val ) {
+	protected function render_content( $val ) { // phpcs:ignore MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName, Generic.Files.LineLength.TooLong
 		foreach ( $this->result->getRecords() as $record ) {
 			$data = array_filter( (array)$record->getData(), static function ( $e ) {
 				return !empty( $e );
