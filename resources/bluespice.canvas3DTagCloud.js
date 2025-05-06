@@ -1,7 +1,7 @@
-( function( mw, $ ){
-	$( document ).ready( function() {
-		$( 'Canvas[id^="bs-tagcloud-canvas3d-"]').each( function() {
-			var $tagConvas = $( this ).tagcanvas( {
+( function ( mw, $ ) {
+	$( () => {
+		$( 'Canvas[id^="bs-tagcloud-canvas3d-"]' ).each( function () {
+			const $tagConvas = $( this ).tagcanvas( {
 				textColour: '#3e5389',
 				outlineColour: '#3e5389',
 				reverse: true,
@@ -10,17 +10,17 @@
 				weight: true,
 				weightMode: 'size',
 				wheelZoom: false,
-				weightFrom: "data-weight",
+				weightFrom: 'data-weight',
 				shadowBlur: 5,
-				shadowOffset: [1,1],
+				shadowOffset: [ 1, 1 ],
 				txtScale: 10,
 				zoom: 1
-			});
-			if( !$tagConvas ) {
+			} );
+			if ( !$tagConvas ) {
 				$( this ).hide();
 			}
-			$( this ).width = "100%";
-			$( this ).width( "100%" );
-		});
-	});
-}( mediaWiki, jQuery ));
+			$( this ).width = '100%';
+			$( this ).width( '100%' );
+		} );
+	} );
+}( mediaWiki, jQuery ) );

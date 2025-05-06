@@ -18,20 +18,20 @@
 	display: block;
 	overflow: auto;
 	padding: 10px;
-	margin: 0 !important;
+	margin: 0 !important; /* stylelint-disable-line declaration-no-important */
 }
 
-.bs-tagcloud.text li{
+.bs-tagcloud.text li {
 	display: inline-block;
 }
 
-.bs-tagcloud.text li a{
+.bs-tagcloud.text li a {
 	margin: 2px;
-	word-break: keep-all !important;
+	word-break: keep-all !important; /* stylelint-disable-line declaration-no-important */
 }
 
 .bs-tagcloud.text.title {
-	font-size: 13px;
+	font-size: 13px; /* stylelint-disable-line declaration-property-unit-disallowed-list */
 	color: grey;
 	font-weight: bold;
 	margin: 0;
@@ -40,11 +40,11 @@
 }
 
 .bs-tagcloud.text.noborder {
-	border:none !important;
+	border: none !important; /* stylelint-disable-line declaration-property-value-disallowed-list, declaration-no-important */
 }
 
 .ve-active .bs-tagcloud.canvas3d {
-	background-image: url('./images/placeholder_cloud.svg' );
+	background-image: url( ./images/placeholder_cloud.svg );
 	background-repeat: no-repeat;
 	background-position: center;
 	min-height: 200px;
