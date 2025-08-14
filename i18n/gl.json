@@ -30,5 +30,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Excluír as páxinas",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Non mostrar estas páxinas na nube de etiquetas. Para especificar máis páxinas, usa unha lista separada por comas; por exemplo, «Páxina principal, Proba, A miña páxina».",
 	"bs-tagcloud-droplet-name": "Nube de etiquetas",
-	"bs-tagcloud-droplet-description": "Nube de etiquetas segundo as categorías ou os termos de procura"
+	"bs-tagcloud-droplet-description": "Nube de etiquetas segundo as categorías ou os termos de procura",
+	"bs-tagcloud-tag-tagcloud-tab-common": "Común",
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "Avanzado"
 }
