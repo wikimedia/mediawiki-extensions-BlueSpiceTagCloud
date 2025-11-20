@@ -113,10 +113,11 @@ class TagCloud extends GenericTag {
 								'type' => 'dropdown',
 								'name' => 'renderer',
 								'label' => Message::newFromKey(
-									'bs-tagcloud-tag-tagcloud-attr-renderer-label'
+									'bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label'
 								)->text(),
 								'help' => Message::newFromKey( 'bs-tagcloud-tag-tagcloud-attr-renderer-help' )->text(),
 								'value' => 'list',
+								'labelAlign' => 'top',
 								'options' => [
 									[
 										'data' => 'text',
@@ -145,6 +146,7 @@ class TagCloud extends GenericTag {
 								'label' => Message::newFromKey( 'bs-tagcloud-tag-tagcloud-attr-store-label' )->text(),
 								'help' => Message::newFromKey( 'bs-tagcloud-tag-tagcloud-attr-store-help' )->text(),
 								'value' => 'category',
+								'labelAlign' => 'top',
 								'options' => [
 									[
 										'data' => 'category',
@@ -168,16 +170,20 @@ class TagCloud extends GenericTag {
 								'help' => Message::newFromKey( 'bs-tagcloud-tag-tagcloud-attr-width-help' )->text(),
 								'widget_min' => 1,
 								'widget_max' => 100,
-								'value' => 100
+								'value' => 100,
+								'labelAlign' => 'top'
 							],
 							[
-								'type' => 'boolean',
+								'type' => 'checkbox',
 								'name' => 'showcount',
+								'labelAlign' => 'inline',
 								'label' => Message::newFromKey(
-									'bs-tagcloud-tag-tagcloud-attr-showcount-label'
+									'bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label'
 								)->text(),
-								'help' => Message::newFromKey( 'bs-tagcloud-tag-tagcloud-attr-showcount-help' )->text(),
-								'value' => true,
+								'help' => Message::newFromKey(
+									'bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help'
+								)->text(),
+								'value' => true
 							],
 						]
 					],
@@ -192,6 +198,7 @@ class TagCloud extends GenericTag {
 								'label' => Message::newFromKey( 'bs-tagcloud-tag-tagcloud-attr-minsize-label' )->text(),
 								'help' => Message::newFromKey( 'bs-tagcloud-tag-tagcloud-attr-minsize-help' )->text(),
 								'value' => 5,
+								'labelAlign' => 'top'
 							],
 							[
 								'type' => 'number',
@@ -200,6 +207,7 @@ class TagCloud extends GenericTag {
 									'bs-tagcloud-tag-tagcloud-attr-maxsize-label'
 								)->text(),
 								'help' => Message::newFromKey( 'bs-tagcloud-tag-tagcloud-attr-maxsize-help' )->text(),
+								'labelAlign' => 'top'
 							],
 							[
 								'type' => 'text',
@@ -208,6 +216,7 @@ class TagCloud extends GenericTag {
 									'bs-tagcloud-tag-tagcloud-attr-exclude-label'
 								)->text(),
 								'help' => Message::newFromKey( 'bs-tagcloud-tag-tagcloud-attr-exclude-help' )->text(),
+								'labelAlign' => 'top'
 							]
 						]
 					]
