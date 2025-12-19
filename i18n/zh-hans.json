@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"A Chinese Wikipedian",
+			"Anterdc99",
 			"Liuxinyu970226",
 			"Xyb"
 		]
@@ -32,5 +33,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "排除的页面",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "不要在标签云中显示这些页面。对于更多的页面，使用逗号分隔列表，例如“主页, 测试, MyPage”。",
 	"bs-tagcloud-droplet-name": "标签云",
-	"bs-tagcloud-droplet-description": "基于类别或搜索查询的标签云"
+	"bs-tagcloud-droplet-description": "基于类别或搜索查询的标签云",
+	"bs-tagcloud-tag-tagcloud-tab-common": "普通",
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "高级"
 }
