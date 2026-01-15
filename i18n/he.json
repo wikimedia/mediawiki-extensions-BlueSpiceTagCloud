@@ -3,7 +3,8 @@
 		"authors": [
 			"Amire80",
 			"Erelon",
-			"Guycn2"
+			"Guycn2",
+			"IKhitron"
 		]
 	},
 	"bs-tagcloud-desc": "הצגת ענני תגים שונים",
@@ -20,7 +21,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-store-help": "יש לבחור באילו נתונים להשתמש",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "קטגוריות",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "ביטויים לחיפוש",
-	"bs-tagcloud-tag-tagcloud-attr-width-label": "רוחב",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "רוחב ענן התגיות",
 	"bs-tagcloud-tag-tagcloud-attr-width-help": "רוחב ענן התגים באחוזים",
 	"bs-tagcloud-tag-tagcloud-attr-minsize-label": "גודל גופן מזערי",
 	"bs-tagcloud-tag-tagcloud-attr-minsize-help": "גודל גופן עבור הערך עם הכי מעט פריטים",

@@ -3,6 +3,7 @@
 		"authors": [
 			"A Chinese Wikipedian",
 			"Anterdc99",
+			"Key0121",
 			"Liuxinyu970226",
 			"Xyb"
 		]
@@ -21,7 +22,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-store-help": "选择要使用的数据",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "分类",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "搜索表单",
-	"bs-tagcloud-tag-tagcloud-attr-width-label": "宽",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "标签云宽度",
 	"bs-tagcloud-tag-tagcloud-attr-width-help": "标签云的宽度百分比",
 	"bs-tagcloud-tag-tagcloud-attr-minsize-label": "最小的字体字号",
 	"bs-tagcloud-tag-tagcloud-attr-minsize-help": "条目最少的项目的字体大小",
