@@ -5,6 +5,7 @@
 			"Anterdc99",
 			"Key0121",
 			"Liuxinyu970226",
+			"Peterxy12",
 			"Xyb"
 		]
 	},
@@ -36,5 +37,8 @@
 	"bs-tagcloud-droplet-name": "标签云",
 	"bs-tagcloud-droplet-description": "基于类别或搜索查询的标签云",
 	"bs-tagcloud-tag-tagcloud-tab-common": "普通",
-	"bs-tagcloud-tag-tagcloud-tab-advanced": "高级"
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "高级",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "显示模式",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "显示频率",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "增加已使用分类或是搜索查询的数目"
 }
