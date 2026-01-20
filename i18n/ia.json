@@ -18,7 +18,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-store-help": "Selige qual datos usar",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "Categorias",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Terminos de recerca",
-	"bs-tagcloud-tag-tagcloud-attr-width-label": "Latitude",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "Latitude del nube de etiquettas",
 	"bs-tagcloud-tag-tagcloud-attr-width-help": "Latitude del etiquettario in percentage",
 	"bs-tagcloud-tag-tagcloud-attr-minsize-label": "Dimension minime de litteras",
 	"bs-tagcloud-tag-tagcloud-attr-minsize-help": "Grandor del typo de litteras pro le entrata con le numero minor de elementos",
