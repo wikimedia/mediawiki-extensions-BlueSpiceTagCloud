@@ -29,5 +29,8 @@
 	"bs-tagcloud-droplet-name": "Etiquettario",
 	"bs-tagcloud-droplet-description": "Nube de etiquettas basate sur categorias o consultas de recerca",
 	"bs-tagcloud-tag-tagcloud-tab-common": "Commun",
-	"bs-tagcloud-tag-tagcloud-tab-advanced": "Avantiate"
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "Avantiate",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "Modo de visualisation",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "Monstrar frequentia",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "Adde le numero de categorias usate o de consultas de recerca"
 }
