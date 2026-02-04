@@ -3,7 +3,8 @@
 		"authors": [
 			"Mainframe98",
 			"McDutchie",
-			"Ndecouck"
+			"Ndecouck",
+			"Siebrand"
 		]
 	},
 	"bs-tagcloud-desc": "Geeft allerlei woordwolken weer",
@@ -34,5 +35,8 @@
 	"bs-tagcloud-droplet-name": "Woordwolk",
 	"bs-tagcloud-droplet-description": "Woordwolk op basis van categorieën of zoekopdrachten",
 	"bs-tagcloud-tag-tagcloud-tab-common": "Gemeenschappelijk",
-	"bs-tagcloud-tag-tagcloud-tab-advanced": "Geavanceerd"
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "Geavanceerd",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "Weergavemodus",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "Frequentie weergeven",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "Voegt het aantal gebruikte categorieën of zoekopdrachten toe"
 }
