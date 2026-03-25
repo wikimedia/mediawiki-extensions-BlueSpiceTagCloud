@@ -3,7 +3,8 @@
 		"authors": [
 			"Amire80",
 			"Erelon",
-			"Guycn2"
+			"Guycn2",
+			"IKhitron"
 		]
 	},
 	"bs-tagcloud-tag-tagcloud-attr-renderer-option-canvas3d": "תלת־ממד",
@@ -14,7 +15,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-renderer-option-list": "רשימה",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "קטגוריות",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "ביטויים לחיפוש",
-	"bs-tagcloud-tag-tagcloud-attr-width-label": "רוחב",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "רוחב ענן התגים",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "הצגת ספירה",
 	"bs-tagcloud-tag-tagcloud-attr-minsize-label": "גודל גופן מזערי",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "גודל גופן מרבי",
@@ -32,5 +33,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "ללא הדפים האלה",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "לא להציג את הדפים האלה בענן התגים. לדפים נוספים, להשתמש ברשימה מופרדת בפסיקים, למשל \"עמוד ראשי, בדיקה, דף שלי\"",
 	"bs-tagcloud-droplet-name": "ענן תגים",
-	"bs-tagcloud-droplet-description": "ענן תגים מבוסס על קטגוריות או שאילתות חיפוש"
+	"bs-tagcloud-droplet-description": "ענן תגים מבוסס על קטגוריות או שאילתות חיפוש",
+	"bs-tagcloud-tag-tagcloud-tab-common": "כללי",
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "מתקדם"
 }

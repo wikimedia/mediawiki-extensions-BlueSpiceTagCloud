@@ -3,7 +3,8 @@
 		"authors": [
 			"Mainframe98",
 			"McDutchie",
-			"Ndecouck"
+			"Ndecouck",
+			"Siebrand"
 		]
 	},
 	"bs-tagcloud-tag-tagcloud-attr-renderer-label": "Type",
@@ -13,7 +14,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-store-label": "Opslaan",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "Categoriën",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Zoektermen",
-	"bs-tagcloud-tag-tagcloud-attr-width-label": "Breedte",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "Breedte van de tagwolk",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "Toon aantal",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "maximale grootte van lettertype",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Pagina's uitsluiten",
@@ -32,5 +33,10 @@
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "Lettergrootte voor de vermelding met de meeste onderdelen",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Deze pagina's niet in de woordwolk weergeven. Gebruik voor meer pagina's een door komma's gescheiden lijst, bv. \"Hoofdpagina, Test, MijnPagina\"",
 	"bs-tagcloud-droplet-name": "Woordwolk",
-	"bs-tagcloud-droplet-description": "Woordwolk op basis van categorieën of zoekopdrachten"
+	"bs-tagcloud-droplet-description": "Woordwolk op basis van categorieën of zoekopdrachten",
+	"bs-tagcloud-tag-tagcloud-tab-common": "Gemeenschappelijk",
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "Geavanceerd",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "Weergavemodus",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "Frequentie weergeven",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "Voegt het aantal gebruikte categorieën of zoekopdrachten toe"
 }
