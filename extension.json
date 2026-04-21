@@ -87,7 +87,7 @@
 		},
 		"ext.bluespice.tagcloud.canvas3d": {
 			"scripts": [
-				"jQuery.tagCanvas/jQuery.tagcanvas.2.9.min.js",
+				"lib/jquery-tagcanvas/jquery.tagcanvas.min.js",
 				"bluespice.canvas3DTagCloud.js"
 			],
 			"dependencies": [
@@ -135,5 +135,6 @@
 		"localBasePath": "resources",
 		"remoteExtPath": "BlueSpiceTagCloud/resources"
 	},
+	"ForeignResourcesDir": "resources/lib",
 	"manifest_version": 2
 }
