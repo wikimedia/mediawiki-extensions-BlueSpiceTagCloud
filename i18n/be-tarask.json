@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ucukor",
 			"W"
 		]
 	},
@@ -8,5 +9,10 @@
 	"bs-tagcloud-tag-tagcloud-attr-renderer-option-text": "Тэкст",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-option-list": "Сьпіс",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "Катэгорыі",
-	"bs-tagcloud-tag-tagcloud-attr-width-label": "Шырыня"
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "Шырыня",
+	"bs-tagcloud-tag-tagcloud-name": "Воблака тэґаў",
+	"bs-tagcloud-tag-tagcloud-title": "Воблака тэґаў",
+	"bs-tagcloud-droplet-name": "Воблака тэґаў",
+	"bs-tagcloud-tag-tagcloud-tab-common": "Звычайны",
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "Пашыраны"
 }
