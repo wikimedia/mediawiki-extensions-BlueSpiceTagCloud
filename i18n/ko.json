@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Tensama0415",
 			"Ykhwong"
 		]
 	},
@@ -19,7 +20,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-store-help": "사용할 데이터를 선택하십시오",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "분류",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "검색어",
-	"bs-tagcloud-tag-tagcloud-attr-width-label": "너비",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "태그 클라우드의 너비",
 	"bs-tagcloud-tag-tagcloud-attr-width-help": "태그 클라우드의 너비 (단위: 퍼센트)",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "개수 표시",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-help": "괄호 안의 항목 수를 표시합니다",
