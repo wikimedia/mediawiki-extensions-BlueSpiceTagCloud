@@ -26,6 +26,8 @@
 	"bs-tagcloud-tag-tagcloud-attr-minsize-help": "حجم الخط للإدخال مع أقل عدد من العناصر",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "حجم الخط الأقصى",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "حجم الخط للإدخال مع أكثر العناصر",
+	"bs-tagcloud-tag-tagcloud-attr-count-label": "عدد",
+	"bs-tagcloud-tag-tagcloud-attr-count-help": "الحد الأقصى لعدد الوسوم المراد عرضها في سحابة الوسوم. في حال عدم تحديده، سيتم استخدام القيمة الافتراضية 40.",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "استبعاد الصفحات",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "لا تعرض هذه الصفحات في سحابة الوسم، لمزيد من الصفحات; استخدم قائمة مفصولة بفواصل، مثل \"الصفحة الرئيسية، تجربة، صفحتي\"",
 	"bs-tagcloud-droplet-name": "سحابة وسم",

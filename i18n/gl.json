@@ -24,6 +24,8 @@
 	"bs-tagcloud-tag-tagcloud-attr-minsize-help": "Tamaño da fonte para a entrada co menor número de elementos",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Tamaño de letra máximo",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "Tamaño da fonte para a entrada co maior número de elementos",
+	"bs-tagcloud-tag-tagcloud-attr-count-label": "Cantidade",
+	"bs-tagcloud-tag-tagcloud-attr-count-help": "Cantidade máxima de etiquetas para mostrar na nube de etiquetas. Se non se define, usarase 40 como valor predeterminado.",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Excluír as páxinas",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Non mostrar estas páxinas na nube de etiquetas. Para especificar máis páxinas, usa unha lista separada por comas; por exemplo, «Páxina principal, Proba, A miña páxina».",
 	"bs-tagcloud-droplet-name": "Nube de etiquetas",
