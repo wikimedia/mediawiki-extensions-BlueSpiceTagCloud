@@ -66,11 +66,17 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 			return str_replace( ' ', '_', $value );
 		}, $typeCategoryExclude );
 		$res = $this->db->select(
-			'categorylinks',
-			[ Record::NAME => 'cl_to', Record::COUNT => 'COUNT(cl_to)' ],
+			[ 'categorylinks', 'linktarget' ],
+			[ Record::NAME => 'lt_title', Record::COUNT => 'COUNT(*)' ],
 			$this->makePreFilterConds( $params ),
 			__METHOD__,
-			$this->makePreOptionConds( $params )
+			$this->makePreOptionConds( $params ),
+			[
+				'linktarget' => [
+					'INNER JOIN',
+					'cl_target_id = lt_id',
+				],
+			]
 		);
 		foreach ( $res as $row ) {
 			if ( count( $this->data ) >= $params->getLimit() ) {
@@ -149,9 +155,9 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 	 */
 	protected function makePreOptionConds( $params ) {
 		$conds = [
-			'GROUP BY' => 'cl_to',
+			'GROUP BY' => 'lt_title',
 			// 'LIMIT' => $params->getLimit(),
-			'ORDER BY' => 'COUNT(cl_to) DESC'
+			'ORDER BY' => 'COUNT(*) DESC'
 		];
 
 		return $conds;
@@ -181,10 +187,10 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 	protected function aliasToFieldName( $alias ) {
 		switch ( $alias ) {
 			case Record::NAME:
-				$alias = 'cl_to';
+				$alias = 'lt_title';
 				break;
 			case Record::COUNT:
-				$alias = 'count(cl_to)';
+				$alias = 'COUNT(*)';
 				break;
 			default:
 		}
