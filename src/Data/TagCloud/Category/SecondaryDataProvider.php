@@ -5,6 +5,7 @@ namespace BlueSpice\TagCloud\Data\TagCloud\Category;
 use BlueSpice\TagCloud\Data\TagCloud\Record;
 use MediaWiki\Context\IContextSource;
 use MediaWiki\Title\Title;
+use Wikimedia\HtmlArmor\HtmlArmor;
 
 class SecondaryDataProvider extends \MWStake\MediaWiki\Component\DataStore\SecondaryDataProvider {
 
@@ -36,7 +37,7 @@ class SecondaryDataProvider extends \MWStake\MediaWiki\Component\DataStore\Secon
 		$title = Title::newFromText( $rawData->{Record::NAME}, NS_CATEGORY );
 		$rawData->{Record::RENDEREDLINK} = $this->linkrenderer->makeLink(
 			$title,
-			new \HtmlArmor( $title->getText() )
+			new HtmlArmor( $title->getText() )
 		);
 		$rawData->{Record::LINK} = $title->getLocalURL();
 
